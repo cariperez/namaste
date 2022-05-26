@@ -1,0 +1,507 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Monda&family=Mulish:wght@200&family=Square+Peg&family=Zen+Loop&display=swap');
+
+/*-----MOBILE: SMARTPHONE-----*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html{
+    font-size: 62.5%;
+    font-size: 1em; 
+}
+
+/* Para Index y todas las secciones:*/
+
+.grillaIndex{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: 15% auto 10%;
+    grid-template-areas: 
+    "header header"
+    "menu main"
+    "footer footer"
+    ;
+    gap: 0px;
+    align-items: stretch;
+    justify-items: stretch;
+}
+
+header{
+    background-color: rgb(226, 215, 199);
+    grid-area: header;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1{
+    font-family: 'Monda', sans-serif;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+h2{
+    font-family: 'Mulish', sans-serif;
+    color: black;
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.menu{
+    grid-area: menu;
+    background-color: rgb(123, 123, 123);
+}
+
+.nav{
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.menu nav ul li{
+    list-style-type: none;
+}
+
+.menu nav ul li a{
+    font-family: 'Mulish', sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.textos{
+    font-family: 'Mulish', sans-serif;
+    color: black;
+    padding-bottom: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+footer{
+    background-color: rgb(226, 215, 199);
+    font-family: 'Mulish', sans-serif;
+    color: black;
+    font-weight: bolder; 
+    grid-area: footer;
+
+}
+
+#contacto{
+    text-align: center; 
+}
+
+/* Solo para Index: */
+
+.bodyIndex{
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+.mainIndex{  
+    width: 100%;
+    height: auto;
+    background-image: url(../imagenes/FAL-D4_reduc\ -\ copia.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    grid-area: main;
+}
+
+#slogan{
+    font-family: 'Square Peg', cursive;
+    font-size: 40px;
+    text-align: left;
+    color: rgb(86, 84, 84);
+    margin-bottom: 30px;
+    margin-left: 100px;
+}
+
+/* Solo para Secciones: */
+
+h3{
+    font-size: 30px;
+    padding-top: 230px;
+}
+
+p{
+    font-size: 15px;
+    padding-top: 15px;
+    text-align: justify;
+}
+
+.botonUp{
+    padding: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.textoUp{
+    color: black;
+    font-family: 'Mulish', sans-serif;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Solo para Servicios: */
+
+.contratacion{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div figure img{
+    width: 250px;
+}
+
+.iconos{
+    text-align: center;
+}
+
+/* Solo para Proyectos: */
+
+.galeria{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.imgProyectos{
+    height: 200px;
+    width: 350px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    border: 2px solid black
+}
+
+figcaption{
+    text-align: center;
+}
+
+/* Solo para Contacto: */
+
+.contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+form{
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: 'Mulish', sans-serif;
+    color: black;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    }
+
+input{
+    display: inline-block;
+}
+
+.botonesFormulario{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.imgContacto{
+    margin-right: 180px;
+    padding-bottom: 20px;
+}
+
+/*DESKTOP*/
+
+@media (min-width: 1024px){
+
+    
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html{
+    font-size: 62.5%;
+    font-size: 1em; 
+}
+
+/* Para Index y todas las secciones:*/
+
+header{
+    background-color: rgb(226, 215, 199);
+    color: black;
+    width: 100%;
+    margin-top: 0px;
+    position: fixed;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    grid-area: header;
+}
+
+.namaste{
+    font-family: 'Monda', sans-serif;
+    font-size: 30px;
+    box-sizing: border-box;
+    margin-right: 50px;
+    margin-top: 20px;  
+    line-height: 50px; 
+    text-align: right;
+}
+
+.subtitulo{
+    font-family: 'Mulish', sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 50px;
+    text-align: right; 
+    margin-bottom: 20px;
+}
+
+.menu{
+    background-color: rgb(123, 123, 123);
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly
+    grid-area: menu
+}
+
+.nav{
+    background-color: rgb(123, 123, 123);
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly
+}
+
+.menu nav ul li{
+    list-style-type: none;
+}
+
+.menu nav ul li a{
+    font-family: 'Mulish', sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.textos{
+    font-family: 'Mulish', sans-serif;
+    color: black;
+    padding-bottom: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+footer{
+    background-color: rgb(226, 215, 199);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Mulish', sans-serif;
+    color: black;
+    font-weight: bolder; 
+}
+
+#contacto{
+    padding-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center; 
+}
+
+/* Solo para Index: */
+
+.bodyIndex{
+    width: 100%;
+    height: 100vh;
+}
+
+.grillaIndex{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 10% 60% auto;
+    grid-template-areas: 
+    "header"
+    "menu"
+    "main"
+    "footer"
+    ;
+}
+
+.mainIndex{  
+    background-image: url(../imagenes/FAL-D4_reduc\ -\ copia.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    grid-area: main;
+}
+
+#slogan{
+    font-family: 'Square Peg', cursive;
+    font-size: 40px;
+    text-align: left;
+    color: rgb(86, 84, 84);
+    margin-bottom: 30px;
+    margin-left: 100px;
+}
+
+/* Solo para Secciones: */
+
+h3{
+    font-size: 30px;
+    padding-top: 230px;
+}
+
+p{
+    font-size: 15px;
+    padding-top: 15px;
+    text-align: justify;
+}
+
+.botonUp{
+    padding: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.textoUp{
+    color: black;
+    font-family: 'Mulish', sans-serif;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Solo para Servicios: */
+
+.contratacion{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div figure img{
+    width: 250px;
+}
+
+.iconos{
+    text-align: center;
+}
+
+/* Solo para Proyectos: */
+
+.galeria{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.imgProyectos{
+    height: 200px;
+    width: 350px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    border: 2px solid black
+}
+
+figcaption{
+    text-align: center;
+}
+
+/* Solo para Contacto: */
+
+.contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+form{
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: 'Mulish', sans-serif;
+    color: black;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    }
+
+input{
+    display: inline-block;
+}
+
+.botonesFormulario{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.imgContacto{
+    margin-right: 180px;
+    padding-bottom: 20px;
+}
+
+
+}
