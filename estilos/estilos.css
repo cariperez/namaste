@@ -15,22 +15,6 @@ html{
 
 /* Para Index y todas las secciones:*/
 
-.grillaIndex{
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 30% auto;
-    grid-template-rows: 15% auto 10%;
-    grid-template-areas: 
-    "header header"
-    "menu main"
-    "footer footer"
-    ;
-    gap: 0px;
-    align-items: stretch;
-    justify-items: stretch;
-}
-
 header{
     background-color: rgb(226, 215, 199);
     grid-area: header;
@@ -61,11 +45,13 @@ h2{
     background-color: rgb(123, 123, 123);
 }
 
-.nav{
-    padding: 2px;
+.navegador{
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: start;
+    gap: 30px;
 }
 
 .menu nav ul li{
@@ -76,7 +62,8 @@ h2{
     font-family: 'Mulish', sans-serif;
     color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: 15px;
+    font-size: 3vw;
+    margin-left: 10px;
 }
 
 .textos{
@@ -93,11 +80,15 @@ footer{
     color: black;
     font-weight: bolder; 
     grid-area: footer;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #contacto{
-    text-align: center; 
+    text-align: center;
+    padding: 0px 
 }
 
 /* Solo para Index: */
@@ -107,29 +98,56 @@ footer{
     height: 100vh;
 }
 
-
+.grillaIndex{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: 18% auto 15% 10%;
+    grid-template-areas: 
+    "header header"
+    "menu main"
+    "slogan slogan"
+    "footer footer"
+    ;
+    gap: 0px;
+    align-items: stretch;
+    justify-items: stretch;
+}
 
 .mainIndex{  
     width: 100%;
     height: auto;
     background-image: url(../imagenes/FAL-D4_reduc\ -\ copia.png);
-    background-position: center center;
+    background-position: left left;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: start;
     grid-area: main;
 }
 
-#slogan{
+.sloganPC{
+    display: none;
+}
+
+.sloganMobile{
+    grid-area: slogan;
+    background-color: rgb(234, 227, 216);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slogan{
     font-family: 'Square Peg', cursive;
-    font-size: 40px;
-    text-align: left;
-    color: rgb(86, 84, 84);
-    margin-bottom: 30px;
-    margin-left: 100px;
+    font-size: 35px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    align-self: center;
 }
 
 /* Solo para Secciones: */
