@@ -66,7 +66,7 @@ h2{
     font-family: 'Mulish', sans-serif;
     color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: 3vw;
+    font-size: 15px;
     margin-left: 10px;
 }
 
@@ -160,7 +160,7 @@ p{
 
 .botonUp{
     padding: 30px;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -206,7 +206,7 @@ p{
     height: 100%;
     display: grid;
     grid-template-columns: 30% auto;
-    grid-template-rows: 18vh 80vh 100vh 10vh;
+    grid-template-rows: 18vh 80vh auto 10vh;
     grid-template-areas: 
     "header header"
     "menu contratacion"
@@ -242,6 +242,10 @@ p{
 
 .contratacionTexto{
     grid-area: contratacionTexto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -323,17 +327,20 @@ form{
     border-radius: 5px;
     font-family: 'Mulish', sans-serif;
     color: black;
-    font-size: 3vw;
+    font-size: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     gap: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 180px;
 }
 
 button, input, select, textarea {
     font-family: inherit;
-    font-size: 100%;
-    }
+    font-size: 90%;
+}
 
 input{
     display: inline-block;
@@ -450,7 +457,7 @@ p{
     font-size: 40px;
     text-align: left;
     color: rgb(86, 84, 84);
-    margin-top: 120px;
+    margin-top: 280px;
     margin-left: 60px;
     display: block;
 }
@@ -576,6 +583,33 @@ figcaption{
     align-items: stretch;
     justify-items: stretch;
 }
+
+.contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+form{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: 'Mulish', sans-serif;
+    color: black;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 30vw;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    }
 
 .imgContacto{
     display: block;
