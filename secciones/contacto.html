@@ -9,98 +9,98 @@
 </head>
 <body>
 
-    <header>
+    <div class="grillaContacto">
 
-        <div class="namaste">
-            <h1>namasté</h1>
-        </div>
-        <div class="subtitulo">
-            <h2>asesoramiento online en diseño de interiores</h2>
-        </div>
-        <div>
-            <nav>
-                <ul class="menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./nosotros.html">Sobre nosotros</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./proyectos.html">Proyectos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-        
-    </header>
- 
-    <main>
-        
-        <h3 id="up" class="textos">Tu consulta no molesta!</h3>
-        
-        <section class="contacto">
-
-            <div class="textos formulario">
-                
-                <form>
-                    <div>
-                        <label for="nombre_apellido">Nombre y apellido:</label>	
-                        <input type="text" name="nombre_apellido"/>
-                    </div>
-                
-                    <div>
-                        <label for="mail">Mail</label>
-                        <input type="text" name=mail/>
-                    </div>
-
-                    <div>Tipo de servicio por el que querés consultar</div>
-
-                    <div>
-                        <select name="elegir">
-                        <option value="porHora">Trabajo especial por hora</option>
-                        <option value="unAmbiente">Diseño completo de un ambiente</option>
-                        <option value="variosAmbientes">Diseño completo de varios ambientes</option>
-                        </select>
-                    </div>
-
-                    
-                    <div>Contás con planos del/los ambiente/s a remodelar?
-
-                    </div>
-                    <div class="botonesFormulario">
-                        <div>SI
-                            <input type="radio" name="respuesta" value="SI">
-                        </div>
-
-                        <div>NO
-                            <input type="radio" name="respuesta" value="NO">
-                        </div>
-                    </div>
-
-                    <div class="botonesFormulario">
-                        <input type="submit" value="Enviar formulario"/>
-                        <input type="reset" value="Limpiar formulario"/>
-                    </div>
-                
-                </form>
+        <header>
+            <div class="namaste">
+                <h1>namasté</h1>
+                <h2>asesoramiento online en diseño de interiores</h2>
             </div>
+        </header>
 
-        <div class="imgContacto">
-            <figure>
-                <img src="../imagenes/undraw_Interior_design_re_7mvn.png" alt="">
-            </figure>
+        <div class="menu">
+            <nav>
+                <ul class="navegador">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../secciones/nosotros.html">Sobre nosotros</a></li>
+                <li><a href="../secciones/servicios.html">Servicios</a></li>
+                <li><a href="../secciones/proyectos.html">Proyectos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>            
         </div>
-        
-        </section>
-        
-        
-        <!-- No es necesario ahora: 
-            <div class="botonUp">
-                <a href="#up" class="textoUp">Ir arriba</a>
-            </div> -->
-        
-    </main>
+    
+        <main class="mainContacto">
+            
+            <h3 id="up" class="textos">Tu consulta no molesta!</h3>
+            
+            <section class="contacto">
 
-    <footer>
-        <p id="contacto">info@namaste.com.ar</p>
-    </footer>
+                <div class="textos formulario">
+                    
+                    <form>
+
+                        <div>
+                            <label for="nombre_apellido">Nombre y apellido:</label>	
+                            <input type="text" name="nombre_apellido"/>
+                        </div>
+                    
+                        <div>
+                            <label for="mail">Mail</label>
+                            <input type="text" name=mail/>
+                        </div>
+
+                        <div>Tipo de servicio por el que querés consultar</div>
+
+                        <div>
+                            <select name="elegir">
+                            <option value="porHora">Trabajo especial por hora</option>
+                            <option value="unAmbiente">Diseño completo de un ambiente</option>
+                            <option value="variosAmbientes">Diseño completo de varios ambientes</option>
+                            </select>
+                        </div>
+
+                        
+                        <div>Contás con planos del/los ambiente/s a remodelar?
+
+                        </div>
+                        <div class="botonesFormulario">
+                            <div>SI
+                                <input type="radio" name="respuesta" value="SI">
+                            </div>
+
+                            <div>NO
+                                <input type="radio" name="respuesta" value="NO">
+                            </div>
+                        </div>
+
+                        <div class="botonesFormulario">
+                            <input type="submit" value="Enviar formulario"/>
+                            <input type="reset" value="Limpiar formulario"/>
+                        </div>
+                    
+                    </form>
+                </div>
+
+                <div class="imgContacto">
+                    <img src="../imagenes/undraw_Interior_design_re_7mvn.png" alt="">
+                </div>
+            
+            </section>
+            
+            
+            <!-- No es necesario ahora: 
+                <div class="botonUp">
+                    <a href="#up" class="textoUp">Ir arriba</a>
+                </div> -->
+            
+        </main>
+
+        <footer>
+            <p id="contacto">info@namaste.com.ar</p>
+        </footer>
+
+    </div>
 
 </body>
 </html>
