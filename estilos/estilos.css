@@ -240,9 +240,14 @@ p{
     height: 100px;
 }
 
+.escala:hover{
+    transform: scale(1.3);
+    transition: all 1s;
+}
+
 .contratacionTexto{
     grid-area: contratacionTexto;
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -317,7 +322,7 @@ figcaption{
 .contacto{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
