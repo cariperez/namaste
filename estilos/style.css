@@ -113,11 +113,7 @@ footer {
       grid-template-columns: 100vw;
   -ms-grid-rows: 18% 8% auto 12% 10%;
       grid-template-rows: 18% 8% auto 12% 10%;
-      grid-template-areas: "header"
- "menu" 
- "mainIndex"
- "slogan"
- "footer";
+      grid-template-areas: "header" "menu"  "mainIndex" "slogan" "footer";
   gap: 0px;
 }
 
@@ -184,9 +180,12 @@ p {
 
 .botonUp {
   padding: 30px;
-  margin-top: 20px;
-  margin-bottom: 20px;
   text-align: center;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: botonUp;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .textoUp {
@@ -212,11 +211,9 @@ p {
   display: grid;
   -ms-grid-columns: 100vw;
       grid-template-columns: 100vw;
-  -ms-grid-rows: 25% auto 10%;
-      grid-template-rows: 25% auto 10%;
-      grid-template-areas: "header"
- "mainNosotros"
- "footer";
+  -ms-grid-rows: 25% auto 10% 10%;
+      grid-template-rows: 25% auto 10% 10%;
+      grid-template-areas: "header" "mainNosotros" "botonUp" "footer";
   gap: 0px;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
@@ -240,10 +237,7 @@ p {
       grid-template-columns: 100vw;
   -ms-grid-rows: 25% auto auto 10%;
       grid-template-rows: 25% auto auto 10%;
-      grid-template-areas: "header"
- "contratacion"
- "contratacionTexto"
- "footer";
+      grid-template-areas: "header" "contratacion" "contratacionTexto" "footer";
   gap: 0px;
 }
 
@@ -318,10 +312,7 @@ p {
       grid-template-columns: 100vw;
   -ms-grid-rows: 25% auto auto 10%;
       grid-template-rows: 25% auto auto 10%;
-      grid-template-areas: "header"
- "mainProyectos"
- "galeria"
- "footer";
+      grid-template-areas: "header" "mainProyectos" "galeria" "footer";
   gap: 0px;
 }
 
@@ -340,10 +331,7 @@ p {
       grid-template-columns: 100vw;
   -ms-grid-rows: 25% auto auto 10%;
       grid-template-rows: 25% auto auto 10%;
-      grid-template-areas: "header"
- "mainProyectos"
- "galeria"
- "footer";
+      grid-template-areas: "header" "mainProyectos" "galeria" "footer";
   gap: 0px;
 }
 
@@ -367,10 +355,7 @@ p {
       grid-template-columns: 100vw;
   -ms-grid-rows: 25% auto auto 10%;
       grid-template-rows: 25% auto auto 10%;
-      grid-template-areas: "header"
- "mainProyectos"
- "galeria"
- "footer";
+      grid-template-areas: "header" "mainProyectos" "galeria" "footer";
   gap: 0px;
 }
 
@@ -384,9 +369,7 @@ p {
       grid-template-columns: 100vw;
   -ms-grid-rows: 25% auto 10%;
       grid-template-rows: 25% auto 10%;
-      grid-template-areas: "header"
- "mainContacto"
- "footer";
+      grid-template-areas: "header" "mainContacto" "footer";
   gap: 0px;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
@@ -463,9 +446,7 @@ form {
         grid-template-columns: 100vw;
     -ms-grid-rows: 25% auto 10%;
         grid-template-rows: 25% auto 10%;
-        grid-template-areas: "header"
- "mainIndex"
- "footer";
+        grid-template-areas: "header" "mainIndex" "footer";
     gap: 0px;
   }
   .mainIndex {
@@ -499,11 +480,9 @@ form {
     display: grid;
     -ms-grid-columns: 100vw;
         grid-template-columns: 100vw;
-    -ms-grid-rows: 25% auto 10%;
-        grid-template-rows: 25% auto 10%;
-        grid-template-areas: "header"
- "mainNosotros"
- "footer";
+    -ms-grid-rows: 25% auto 10% 10%;
+        grid-template-rows: 25% auto 10% 10%;
+        grid-template-areas: "header" "mainNosotros" "botonUp" "footer";
     gap: 0px;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
@@ -518,12 +497,9 @@ form {
     display: grid;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 25% auto auto 10%;
-        grid-template-rows: 25% auto auto 10%;
-        grid-template-areas: "header"
- "contratacion" 
- "contratacionTexto"
- "footer";
+    -ms-grid-rows: 25% auto auto 10% 10%;
+        grid-template-rows: 25% auto auto 10% 10%;
+        grid-template-areas: "header" "contratacion"  "contratacionTexto" "botonUp" "footer";
     gap: 0px;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
@@ -557,12 +533,9 @@ form {
     display: grid;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 25% auto auto 10vh;
-        grid-template-rows: 25% auto auto 10vh;
-        grid-template-areas: "header"
- "mainProyectos"
- "galeria" 
- "footer";
+    -ms-grid-rows: 25% auto auto 10% 10%;
+        grid-template-rows: 25% auto auto 10% 10%;
+        grid-template-areas: "header" "mainProyectos" "galeria" "botonUp"  "footer";
     gap: 0px;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
@@ -585,9 +558,7 @@ form {
         grid-template-columns: 100%;
     -ms-grid-rows: 25% auto 10vh;
         grid-template-rows: 25% auto 10vh;
-        grid-template-areas: "header"
- "mainContacto" 
- "footer";
+        grid-template-areas: "header" "mainContacto"  "footer";
     gap: 0px;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;

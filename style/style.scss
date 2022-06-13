@@ -153,9 +153,9 @@ p{
 
 .botonUp{
     padding: 30px;
-    margin-top: 20px;
-    margin-bottom: 20px;
     text-align: center;
+    grid-area: botonUp;
+    align-self: center;
 }
 
 .textoUp{
@@ -180,10 +180,11 @@ p{
     height: 100vh;
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 25% auto 10%;
+    grid-template-rows: 25% auto 10% 10%;
     grid-template-areas: 
     "header"
     "mainNosotros"
+    "botonUp"
     "footer"
     ;
     gap: 0px;
@@ -433,10 +434,11 @@ p{
     height: 100vh;
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 25% auto 10%;
+    grid-template-rows: 25% auto 10% 10%;
     grid-template-areas: 
     "header"
     "mainNosotros"
+    "botonUp"
     "footer"
     ;
     gap: 0px;
@@ -452,11 +454,12 @@ p{
     height: 100vh;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 25% auto auto 10%;
+    grid-template-rows: 25% auto auto 10% 10%;
     grid-template-areas: 
     "header"
     "contratacion" 
     "contratacionTexto"
+    "botonUp"
     "footer"
     ;
     gap: 0px;
@@ -485,11 +488,12 @@ p{
     height: 100vp;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 25% auto auto 10vh;
+    grid-template-rows: 25% auto auto 10% 10%;
     grid-template-areas: 
     "header"
     "mainProyectos"
-    "galeria" 
+    "galeria"
+    "botonUp" 
     "footer"
     ;
     gap: 0px;
@@ -504,7 +508,6 @@ p{
 .galeria{
     width: 70vw;
 }
-
 
 
 /* Solo para Contacto: */
