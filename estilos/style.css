@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-/* No CSS *//*# sourceMappingURL=style.css.map */
-=======
 @import url("https://fonts.googleapis.com/css2?family=Monda&family=Mulish:wght@200&family=Square+Peg&family=Zen+Loop&display=swap");
 * {
   padding: 0px;
@@ -116,7 +113,11 @@ footer {
       grid-template-columns: 100vw;
   -ms-grid-rows: 18% 8% auto 12% 10%;
       grid-template-rows: 18% 8% auto 12% 10%;
-      grid-template-areas: "header" "menu"  "mainIndex" "slogan" "footer";
+      grid-template-areas: "header"
+ "menu" 
+ "mainIndex"
+ "slogan"
+ "footer";
   gap: 0px;
 }
 
@@ -213,7 +214,9 @@ p {
       grid-template-columns: 100vw;
   -ms-grid-rows: 25% auto 10%;
       grid-template-rows: 25% auto 10%;
-      grid-template-areas: "header" "mainNosotros" "footer";
+      grid-template-areas: "header"
+ "mainNosotros"
+ "footer";
   gap: 0px;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
@@ -237,7 +240,10 @@ p {
       grid-template-columns: 100vw;
   -ms-grid-rows: 25% auto auto 10%;
       grid-template-rows: 25% auto auto 10%;
-      grid-template-areas: "header" "contratacion" "contratacionTexto" "footer";
+      grid-template-areas: "header"
+ "contratacion"
+ "contratacionTexto"
+ "footer";
   gap: 0px;
 }
 
@@ -312,7 +318,10 @@ p {
       grid-template-columns: 100vw;
   -ms-grid-rows: 25% auto auto 10%;
       grid-template-rows: 25% auto auto 10%;
-      grid-template-areas: "header" "mainProyectos" "galeria" "footer";
+      grid-template-areas: "header"
+ "mainProyectos"
+ "galeria"
+ "footer";
   gap: 0px;
 }
 
@@ -331,7 +340,10 @@ p {
       grid-template-columns: 100vw;
   -ms-grid-rows: 25% auto auto 10%;
       grid-template-rows: 25% auto auto 10%;
-      grid-template-areas: "header" "mainProyectos" "galeria" "footer";
+      grid-template-areas: "header"
+ "mainProyectos"
+ "galeria"
+ "footer";
   gap: 0px;
 }
 
@@ -355,7 +367,10 @@ p {
       grid-template-columns: 100vw;
   -ms-grid-rows: 25% auto auto 10%;
       grid-template-rows: 25% auto auto 10%;
-      grid-template-areas: "header" "mainProyectos" "galeria" "footer";
+      grid-template-areas: "header"
+ "mainProyectos"
+ "galeria"
+ "footer";
   gap: 0px;
 }
 
@@ -369,7 +384,9 @@ p {
       grid-template-columns: 100vw;
   -ms-grid-rows: 25% auto 10%;
       grid-template-rows: 25% auto 10%;
-      grid-template-areas: "header" "mainContacto" "footer";
+      grid-template-areas: "header"
+ "mainContacto"
+ "footer";
   gap: 0px;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
@@ -446,7 +463,9 @@ form {
         grid-template-columns: 100vw;
     -ms-grid-rows: 25% auto 10%;
         grid-template-rows: 25% auto 10%;
-        grid-template-areas: "header" "mainIndex" "footer";
+        grid-template-areas: "header"
+ "mainIndex"
+ "footer";
     gap: 0px;
   }
   .mainIndex {
@@ -482,7 +501,9 @@ form {
         grid-template-columns: 100vw;
     -ms-grid-rows: 25% auto 10%;
         grid-template-rows: 25% auto 10%;
-        grid-template-areas: "header" "mainNosotros" "footer";
+        grid-template-areas: "header"
+ "mainNosotros"
+ "footer";
     gap: 0px;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
@@ -499,7 +520,10 @@ form {
         grid-template-columns: 100%;
     -ms-grid-rows: 25% auto auto 10%;
         grid-template-rows: 25% auto auto 10%;
-        grid-template-areas: "header" "contratacion"  "contratacionTexto" "footer";
+        grid-template-areas: "header"
+ "contratacion" 
+ "contratacionTexto"
+ "footer";
     gap: 0px;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
@@ -535,7 +559,10 @@ form {
         grid-template-columns: 100%;
     -ms-grid-rows: 25% auto auto 10vh;
         grid-template-rows: 25% auto auto 10vh;
-        grid-template-areas: "header" "mainProyectos" "galeria"  "footer";
+        grid-template-areas: "header"
+ "mainProyectos"
+ "galeria" 
+ "footer";
     gap: 0px;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
@@ -558,7 +585,9 @@ form {
         grid-template-columns: 100%;
     -ms-grid-rows: 25% auto 10vh;
         grid-template-rows: 25% auto 10vh;
-        grid-template-areas: "header" "mainContacto"  "footer";
+        grid-template-areas: "header"
+ "mainContacto" 
+ "footer";
     gap: 0px;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
@@ -573,4 +602,3 @@ form {
   }
 }
 /*# sourceMappingURL=style.css.map */
->>>>>>> bootstrap
