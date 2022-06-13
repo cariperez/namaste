@@ -51,13 +51,12 @@ html{
     z-index: 1;
 }
 
-.menu nav ul li a{
+.texto{
     font-family: 'Mulish', sans-serif;
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 15px;
-    margin-left: 10px;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 .textos{
@@ -80,7 +79,7 @@ footer{
     margin-bottom: 0px;
 }
 
-#contacto{
+.contacto{
     text-align: center;
     padding: 0px 
 }
@@ -167,6 +166,10 @@ p{
     border-radius: 5px;
     margin-bottom: 20px;
     text-decoration: none;
+        &:hover{
+            background-color: black;
+            color: white;
+    }
 }
 
 
@@ -252,10 +255,11 @@ p{
     height: 100vh;
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 25% auto 10%;
+    grid-template-rows: 25% auto auto 10%;
     grid-template-areas: 
     "header"
     "mainProyectos"
+    "galeria"
     "footer"
     ;
     gap: 0px;
@@ -265,8 +269,43 @@ p{
     grid-area: mainProyectos;
 }
 
+.grillaProyectos-resid{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 25% auto auto 10%;
+    grid-template-areas: 
+    "header"
+    "mainProyectos"
+    "galeria"
+    "footer"
+    ;
+    gap: 0px;
+}
+
+.galeria{
+    grid-area: galeria;
+    width: 90vw;
+}
+
 .mobileNo{
     display: none;
+}
+
+.grillaProyectos{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 25% auto auto 10%;
+    grid-template-areas: 
+    "header"
+    "mainProyectos"
+    "galeria"
+    "footer"
+    ;
+    gap: 0px;
 }
 
 
@@ -410,7 +449,7 @@ p{
 
 .grillaServicios{
     width: 100%;
-    height: 100vh
+    height: 100vh;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 25% auto auto 10%;
@@ -446,10 +485,11 @@ p{
     height: 100vp;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 25% auto 10vh;
+    grid-template-rows: 25% auto auto 10vh;
     grid-template-areas: 
     "header"
-    "mainProyectos" 
+    "mainProyectos"
+    "galeria" 
     "footer"
     ;
     gap: 0px;
@@ -460,6 +500,11 @@ p{
 .mobileNo{
     display: block;
 }
+
+.galeria{
+    width: 70vw;
+}
+
 
 
 /* Solo para Contacto: */
@@ -482,8 +527,9 @@ p{
 
 .imgContacto{
     display: block;
-    margin-right: 180px;
     padding-bottom: 20px;
+    width: 400px;
+    height: auto;
 }
 
 }

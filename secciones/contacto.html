@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="stylesheet" href="../estilos/style.css">
     <title>namasté-contacto</title>
 </head>
 <body>
@@ -22,133 +22,128 @@
       </div>
               
       <div class="menu">
-      
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #7b7b7b;">
-                    
-          <div class="container-fluid">
+
+        <nav class="navbar navbar-expand-lg navbar-dark mb-0" style="background-color: #7b7b7b;">
               
+          <div class="container-fluid">
+        
             <button 
-            class="navbar-toggler" 
-            type="button"
+            class="color navbar-toggler" 
+            type="button" 
             data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
-              
+        
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav d-lg-flex flex-lg-row w-100 justify-content-evenly">
-              
+          
                 <li class="nav-item">
-                  <a class="texto nav-link" href="../index.html">Inicio</a>
+                  <a class="texto nav-link active" aria-current="page" href="../index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
                   <a class="texto nav-link" href="../secciones/nosotros.html">Nosotros</a>
                 </li>
                 <li class="nav-item">
                   <a class="texto nav-link" href="../secciones/servicios.html">Servicios</a>
-                </li>            
+                </li> 
+
+                <li class="nav-item dropdown">
+                  <a class="texto nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Proyectos</a>
+                  <ul class="desplegable dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                    <li><a class="texto item dropdown-item" href="../secciones/proyectos-resid.html">Residenciales</a></li>
+                    <li><a class="texto item dropdown-item" href="../secciones/proyectos-comer.html">Comerciales</a></li>
+                    <li><a class="texto item dropdown-item" href="../secciones/proyectos-ofic.html">Espacios de trabajo</a></li>
+                  </ul>
+                </li>  
+
                 <li class="nav-item">
-                  <a class="texto nav-link" href="../secciones/proyectos.html">Proyectos</a>
-                </li>            
-                <li class="nav-item">
-                  <a class="texto nav-link active" aria-current="page" href="../secciones/contacto.html">Contacto</a>
+                  <a class="texto nav-link" href="../secciones/contacto.html">Contacto</a>
                 </li>
-              
+          
               </ul>
             </div>
-              
+        
           </div>
-              
+        
         </nav>
-              
+        
       </div>  
                   
     </div>
     
-    <main class="mainContacto mx-5">
+    <main class="mainContacto container">
               
-        <h3 class="textos">Tu consulta no molesta!</h3>
+      <h3 class="textos">Tu consulta no molesta!</h3>
 
-        <div class="row mb-3">
+      <div class="row mb-3">
 
-          <div class="col-md-6">
+        <div class="col-md-6">
 
-            <form class="p-4 border border-dark rounded">
+          <form class="p-4 border border-dark rounded align-self">
 
-              <div class="row mb-3">
-                <label for="inputEmail3" class="col-sm-3 col-form-label">Email</label>
-                <div class="col-sm-9">
-                  <input type="email" class="form-control" id="inputEmail3">
-                </div>
+            <div class="row mb-3">
+              <label for="inputEmail3" class="col-sm-3 col-form-label">Email</label>
+              <div class="col-sm-9">
+                <input type="email" class="form-control" id="inputEmail3">
               </div>
-              <div class="row mb-3">
-                <label for="inputNombre" class="col-sm-3 col-form-label">Nombre y apellido</label>
-                <div class="col-sm-9">
-                  <input type="text" class="form-control" id="inputNombre">
-                </div>
-              </div>
-
-              <fieldset class="row mb-3">
-                <legend class="col-form-label col-sm-10 pt-0">Contás con planos del ambiente/los ambientes a remodelar?</legend>
-                <div class="col-sm-2 me-3">
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                    <label class="form-check-label" for="gridRadios1">
-                      Sí
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                    <label class="form-check-label" for="gridRadios2">
-                      No
-                    </label>
-                  </div>
-                </div>
-              </fieldset>
-
-              <div class="col-auto">
-                <label class="visually-hidden" for="autoSizingSelect">Tipo de servicio sobre el que querés consultar</label>
-                <select class="form-select" id="autoSizingSelect">
-                  <option selected>Seleccioná...</option>
-                  <option value="1">Trabajo especial por hora</option>
-                  <option value="2">Diseño completo de un ambiente</option>
-                  <option value="3">Diseño completo de varios ambientes</option>
-                </select>
-              </div>
-
-              <div class="col-auto mt-4">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="autoSizingCheck">
-                  <label class="form-check-label" for="autoSizingCheck">
-                    Quiero recibir novedades!
-                  </label>
-                </div>
-              </div>
-
-            </form>
-          
-          </div>
-              
-          
-          <div class="col-md-6">
-            <div class="imgContacto">
-              <img src="../imagenes/undraw_Interior_design_re_7mvn.png" alt="">
             </div>
-          </div>
-                
+            <div class="row mb-3">
+              <label for="inputNombre" class="col-sm-3 col-form-label">Nombre y apellido</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="inputNombre">
+              </div>
+            </div>
+
+            <fieldset class="row mb-3">
+              <legend class="col-form-label col-sm-10 pt-0">Contás con planos del ambiente/los ambientes a remodelar?</legend>
+              <div class="col-sm-2 me-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                  <label class="form-check-label" for="gridRadios1">Sí</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                  <label class="form-check-label" for="gridRadios2">No</label>
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="col-auto">
+              <label class="visually-hidden" for="autoSizingSelect">Tipo de servicio sobre el que querés consultar</label>
+              <select class="form-select" id="autoSizingSelect">
+                <option selected>Seleccioná...</option>
+                <option value="1">Trabajo especial por hora</option>
+                <option value="2">Diseño completo de un ambiente</option>
+                <option value="3">Diseño completo de varios ambientes</option>
+              </select>
+            </div>
+
+            <div class="col-auto mt-4">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                <label class="form-check-label" for="autoSizingCheck">Quiero recibir novedades!</label>
+              </div>
+            </div>
+
+          </form>
+          
         </div>
-            
-            
-        <!-- No es necesario ahora: 
-        <div class="botonUp">
-            <a href="#up" class="textoUp">Ir arriba</a>
-        </div> -->
-            
-    </main>
+              
+          
+        <div class="col-md-6 d-flex justify-content-center align-content-center">
+          <div class="imgContacto">
+            <img src="../imagenes/contacto.png" alt="">
+          </div>
+        </div>
+                
+    </div>
+         
+  </main>
 
     
-    <footer>
-      <p id="contacto">info@namaste.com.ar</p>
-    </footer>
+  <footer>
+    <p class="contacto">info@namaste.com.ar</p>
+  </footer>
 
   </div>
 
