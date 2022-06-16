@@ -141,7 +141,11 @@ p {
       grid-template-columns: 100vw;
   -ms-grid-rows: 18% 8% auto 12% 10%;
       grid-template-rows: 18% 8% auto 12% 10%;
-      grid-template-areas: "header" "menu"  "mainIndex" "slogan" "footer";
+      grid-template-areas: "header"
+ "menu" 
+ "mainIndex"
+ "slogan"
+ "footer";
   gap: 0px;
 }
 
@@ -194,7 +198,6 @@ p {
 
 /*---------------------DESKTOP---------------------*/
 @media (min-width: 1024px) {
-  /* Solo para Index: */
   .grillaIndex {
     width: 100%;
     height: 100vh;
@@ -204,7 +207,9 @@ p {
         grid-template-columns: 100vw;
     -ms-grid-rows: 25% auto 10%;
         grid-template-rows: 25% auto 10%;
-        grid-template-areas: "header" "mainIndex" "footer";
+        grid-template-areas: "header"
+ "mainIndex"
+ "footer";
     gap: 0px;
   }
   .mainIndex {
@@ -242,7 +247,10 @@ p {
       grid-template-columns: 100vw;
   -ms-grid-rows: 25% auto 10% 10%;
       grid-template-rows: 25% auto 10% 10%;
-      grid-template-areas: "header" "mainNosotros" "botonUp" "footer";
+      grid-template-areas: "header"
+ "mainNosotros"
+ "botonUp"
+ "footer";
   gap: 0px;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
@@ -258,7 +266,6 @@ p {
 
 /*---------------------DESKTOP---------------------*/
 @media (min-width: 1024px) {
-  /* Solo para Nosotros: */
   .grillaNosotros {
     width: 100%;
     height: 100vh;
@@ -268,7 +275,10 @@ p {
         grid-template-columns: 100vw;
     -ms-grid-rows: 25% auto 10% 10%;
         grid-template-rows: 25% auto 10% 10%;
-        grid-template-areas: "header" "mainNosotros" "botonUp" "footer";
+        grid-template-areas: "header"
+ "mainNosotros"
+ "botonUp"
+ "footer";
     gap: 0px;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
@@ -287,7 +297,11 @@ p {
       grid-template-columns: 100vw;
   -ms-grid-rows: 25% auto auto 10% 10%;
       grid-template-rows: 25% auto auto 10% 10%;
-      grid-template-areas: "header" "contratacion" "contratacionTexto" "botonUp" "footer";
+      grid-template-areas: "header"
+ "contratacion"
+ "contratacionTexto"
+ "botonUp"
+ "footer";
   gap: 0px;
 }
 
@@ -354,7 +368,6 @@ p {
 
 /*---------------------DESKTOP---------------------*/
 @media (min-width: 1024px) {
-  /* Solo para Servicios: */
   .grillaServicios {
     width: 100%;
     height: 100vh;
@@ -364,7 +377,11 @@ p {
         grid-template-columns: 100%;
     -ms-grid-rows: 25% auto auto 10% 10%;
         grid-template-rows: 25% auto auto 10% 10%;
-        grid-template-areas: "header" "contratacion"  "contratacionTexto" "botonUp" "footer";
+        grid-template-areas: "header"
+ "contratacion" 
+ "contratacionTexto"
+ "botonUp"
+ "footer";
     gap: 0px;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
@@ -402,7 +419,11 @@ p {
       grid-template-columns: 100vw;
   -ms-grid-rows: 25% auto auto 10% 10%;
       grid-template-rows: 25% auto auto 10% 10%;
-      grid-template-areas: "header" "mainProyectos" "galeria" "botonUp" "footer";
+      grid-template-areas: "header"
+ "mainProyectos"
+ "galeria"
+ "botonUp"
+ "footer";
   gap: 0px;
 }
 
@@ -434,7 +455,11 @@ p {
         grid-template-columns: 100%;
     -ms-grid-rows: 25% auto auto 10% 10%;
         grid-template-rows: 25% auto auto 10% 10%;
-        grid-template-areas: "header" "mainProyectos" "galeria" "botonUp"  "footer";
+        grid-template-areas: "header"
+ "mainProyectos"
+ "galeria"
+ "botonUp" 
+ "footer";
     gap: 0px;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
@@ -459,7 +484,9 @@ p {
       grid-template-columns: 100vw;
   -ms-grid-rows: 25% auto 10%;
       grid-template-rows: 25% auto 10%;
-      grid-template-areas: "header" "mainContacto" "footer";
+      grid-template-areas: "header"
+ "mainContacto"
+ "footer";
   gap: 0px;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
@@ -495,7 +522,9 @@ form {
         grid-template-columns: 100%;
     -ms-grid-rows: 25% auto 10vh;
         grid-template-rows: 25% auto 10vh;
-        grid-template-areas: "header" "mainContacto"  "footer";
+        grid-template-areas: "header"
+ "mainContacto" 
+ "footer";
     gap: 0px;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
