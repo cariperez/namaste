@@ -1,0 +1,91 @@
+/*---------------------MOBILE-SMARTPHONE---------------------*/
+
+.grillaServicios{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 25% auto auto 10% 10%;
+    grid-template-areas: 
+    "header"
+    "contratacion"
+    "contratacionTexto"
+    "botonUp"
+    "footer"
+    ;
+    gap: 0px;
+}
+
+.modosContratacion{
+    grid-area: contratacion;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 15px
+}
+
+.contratacionBotones{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-content: center;
+
+    img{
+        align-self: center;
+        height: 150px;
+    }
+}
+
+.escala:hover{
+    transform: scale(1.3);
+    transition: all 1s;
+}
+
+.contratacionTexto{
+    grid-area: contratacionTexto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/*---------------------DESKTOP---------------------*/
+
+@media (min-width: 1024px){
+
+    /* Solo para Servicios: */
+    
+    .grillaServicios{
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% auto auto 10% 10%;
+        grid-template-areas: 
+        "header"
+        "contratacion" 
+        "contratacionTexto"
+        "botonUp"
+        "footer"
+        ;
+        gap: 0px;
+        align-items: stretch;
+        justify-items: stretch;
+    }
+    
+    .contratacionBotones{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        
+        img{
+            height: 220px;
+        }
+    }
+    
+}

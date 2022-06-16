@@ -1,0 +1,16 @@
+footer{
+    background-color: $fondo-header-footer;
+    font-family: $fuente-principal;
+    color: black;
+    font-weight: bolder; 
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+        .contacto{
+        text-align: center;
+        padding: 0px; 
+    }
+}

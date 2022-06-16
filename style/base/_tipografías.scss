@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda&family=Mulish:wght@200&family=Square+Peg&family=Zen+Loop&display=swap');
+
+// ---------------------MOBILE-SMARTPHONE---------------------
+
+.texto{
+    font-family: $fuente-principal;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.textos{
+    font-family: $fuente-principal;
+    color: black;
+    font-weight: bolder;
+    padding-bottom: 30px;
+}
+
+h3{
+    font-size: 25px;
+    padding-top: 40px;
+    text-align: left;
+    font-weight: bold;
+}
+
+p{
+    font-size: 15px;
+    padding-top: 15px;
+    text-align: justify;
+}
+
+/*---------------------DESKTOP---------------------*/
+
+@media (min-width: 1024px){
+
+    .textos{
+        font-family: $fuente-principal;
+        color: black;
+        padding-bottom: 30px;
+    }
+    
+    h3{
+        font-size: 25px;
+        padding-top: 50px;
+        text-align: left;
+    }
+    
+    p{
+        font-size: 15px;
+        padding-top: 20px;
+        text-align: justify;
+    }
+}

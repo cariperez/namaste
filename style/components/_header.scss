@@ -1,0 +1,57 @@
+// ---------------------MOBILE-SMARTPHONE---------------------
+
+.header{
+    grid-area: header;
+}
+
+.namaste{
+    width: 100%;
+    height: 18vh;
+    background-color: $fondo-header-footer;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+        h1{
+        font-family: 'Monda', sans-serif;
+        color: black;
+        font-size: 40px;
+        line-height: 5vh;
+        text-align: center;
+    }
+        h2{
+        font-family: $fuente-principal;
+        color: black;
+        font-size: 15px;
+        font-weight: lighter;
+        text-align: center;
+    }
+}
+
+.menu{
+    grid-area: menu;
+    z-index: 1;
+}
+
+// ---------------------DESKTOP---------------------
+
+@media (min-width: 1024px){
+
+    .namaste{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 10px;
+      
+         h1{
+            font-size: 40px;
+            margin-right: 50px;
+        }
+        
+        h2{
+            font-size: 15px;
+            margin-right: 50px;
+        }
+    }
+}

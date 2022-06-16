@@ -9,8 +9,53 @@ html {
   font-size: 1em;
 }
 
-/*---------------------MOBILE-SMARTPHONE---------------------*/
-/* Para Index y todas las secciones:*/
+.texto {
+  font-family: "Mulish", sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.textos {
+  font-family: "Mulish", sans-serif;
+  color: black;
+  font-weight: bolder;
+  padding-bottom: 30px;
+}
+
+h3 {
+  font-size: 25px;
+  padding-top: 40px;
+  text-align: left;
+  font-weight: bold;
+}
+
+p {
+  font-size: 15px;
+  padding-top: 15px;
+  text-align: justify;
+}
+
+/*---------------------DESKTOP---------------------*/
+@media (min-width: 1024px) {
+  .textos {
+    font-family: "Mulish", sans-serif;
+    color: black;
+    padding-bottom: 30px;
+  }
+  h3 {
+    font-size: 25px;
+    padding-top: 50px;
+    text-align: left;
+  }
+  p {
+    font-size: 15px;
+    padding-top: 20px;
+    text-align: justify;
+  }
+}
+
 .header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -45,7 +90,7 @@ html {
 }
 
 .namaste h2 {
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
   color: black;
   font-size: 15px;
   font-weight: lighter;
@@ -59,51 +104,34 @@ html {
   z-index: 1;
 }
 
-.texto {
-  font-family: 'Mulish', sans-serif;
-  color: white;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: bold;
+@media (min-width: 1024px) {
+  .namaste {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    gap: 10px;
+  }
+  .namaste h1 {
+    font-size: 40px;
+    margin-right: 50px;
+  }
+  .namaste h2 {
+    font-size: 15px;
+    margin-right: 50px;
+  }
 }
 
-.textos {
-  font-family: 'Mulish', sans-serif;
-  color: black;
-  font-weight: bolder;
-  padding-bottom: 30px;
-}
-
-footer {
-  background-color: #e2d7c7;
-  font-family: 'Mulish', sans-serif;
-  color: black;
-  font-weight: bolder;
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: footer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 0px;
-}
-
-.contacto {
-  text-align: center;
-  padding: 0px;
-}
-
-/* Solo para Index: */
+/*---------------------MOBILE-SMARTPHONE---------------------*/
 .grillaIndex {
   width: 100%;
   height: 100vh;
@@ -164,46 +192,47 @@ footer {
       align-self: center;
 }
 
-/* Solo para Secciones: */
-h3 {
-  font-size: 25px;
-  padding-top: 40px;
-  text-align: left;
-  font-weight: bold;
+/*---------------------DESKTOP---------------------*/
+@media (min-width: 1024px) {
+  /* Solo para Index: */
+  .grillaIndex {
+    width: 100%;
+    height: 100vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100vw;
+        grid-template-columns: 100vw;
+    -ms-grid-rows: 25% auto 10%;
+        grid-template-rows: 25% auto 10%;
+        grid-template-areas: "header" "mainIndex" "footer";
+    gap: 0px;
+  }
+  .mainIndex {
+    background-image: url(../imagenes/FAL-D4_reduc-copia.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: mainIndex;
+  }
+  .sloganPC {
+    font-family: 'Square Peg', cursive;
+    font-size: 40px;
+    text-align: left;
+    color: #565454;
+    margin-top: 280px;
+    margin-left: 60px;
+    display: block;
+    font-weight: bolder;
+  }
+  .sloganMobile {
+    display: none;
+  }
 }
 
-p {
-  font-size: 15px;
-  padding-top: 15px;
-  text-align: justify;
-}
-
-.botonUp {
-  padding: 30px;
-  text-align: center;
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: botonUp;
-  -ms-flex-item-align: center;
-      align-self: center;
-}
-
-.textoUp {
-  color: black;
-  font-family: 'Mulish', sans-serif;
-  padding: 10px;
-  border: 1px solid black;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  text-decoration: none;
-}
-
-.textoUp:hover {
-  background-color: black;
-  color: white;
-}
-
-/* Solo para Nosotros: */
+/*---------------------MOBILE-SMARTPHONE---------------------*/
 .grillaNosotros {
   width: 100%;
   height: 100vh;
@@ -227,7 +256,28 @@ p {
   grid-area: mainNosotros;
 }
 
-/* Solo para Servicios: */
+/*---------------------DESKTOP---------------------*/
+@media (min-width: 1024px) {
+  /* Solo para Nosotros: */
+  .grillaNosotros {
+    width: 100%;
+    height: 100vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100vw;
+        grid-template-columns: 100vw;
+    -ms-grid-rows: 25% auto 10% 10%;
+        grid-template-rows: 25% auto 10% 10%;
+        grid-template-areas: "header" "mainNosotros" "botonUp" "footer";
+    gap: 0px;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    justify-items: stretch;
+  }
+}
+
+/*---------------------MOBILE-SMARTPHONE---------------------*/
 .grillaServicios {
   width: 100%;
   height: 100vh;
@@ -302,167 +352,8 @@ p {
           justify-content: center;
 }
 
-/* Solo para Proyectos: */
-.grillaProyectos {
-  width: 100%;
-  height: 100vh;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 100vw;
-      grid-template-columns: 100vw;
-  -ms-grid-rows: 25% auto auto 10% 10%;
-      grid-template-rows: 25% auto auto 10% 10%;
-      grid-template-areas: "header" "mainProyectos" "galeria" "botonUp" "footer";
-  gap: 0px;
-}
-
-.mainProyectos {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: mainProyectos;
-}
-
-.galeria {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: galeria;
-  width: 90vw;
-}
-
-.mobileNo {
-  display: none;
-}
-
-/* Solo para Contacto: */
-.grillaContacto {
-  width: 100%;
-  height: 100vh;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 100vw;
-      grid-template-columns: 100vw;
-  -ms-grid-rows: 25% auto 10%;
-      grid-template-rows: 25% auto 10%;
-      grid-template-areas: "header" "mainContacto" "footer";
-  gap: 0px;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  justify-items: stretch;
-}
-
-.mainContacto {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: mainContacto;
-}
-
-.imgContacto {
-  display: none;
-}
-
-form {
-  font-family: 'Mulish', sans-serif;
-  color: black;
-  font-weight: bolder;
-  font-size: 15px;
-}
-
 /*---------------------DESKTOP---------------------*/
 @media (min-width: 1024px) {
-  /* Para Index y todas las secciones:*/
-  .namaste {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    gap: 10px;
-  }
-  .namaste h1 {
-    font-size: 40px;
-    margin-right: 50px;
-  }
-  .namaste h2 {
-    font-size: 15px;
-    margin-right: 50px;
-  }
-  .textos {
-    font-family: 'Mulish', sans-serif;
-    color: black;
-    padding-bottom: 30px;
-  }
-  h3 {
-    font-size: 25px;
-    padding-top: 50px;
-    text-align: left;
-  }
-  p {
-    font-size: 15px;
-    padding-top: 20px;
-    text-align: justify;
-  }
-  /* Solo para Index: */
-  .grillaIndex {
-    width: 100%;
-    height: 100vh;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 100vw;
-        grid-template-columns: 100vw;
-    -ms-grid-rows: 25% auto 10%;
-        grid-template-rows: 25% auto 10%;
-        grid-template-areas: "header" "mainIndex" "footer";
-    gap: 0px;
-  }
-  .mainIndex {
-    background-image: url(../imagenes/FAL-D4_reduc-copia.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: mainIndex;
-  }
-  .sloganPC {
-    font-family: 'Square Peg', cursive;
-    font-size: 40px;
-    text-align: left;
-    color: #565454;
-    margin-top: 280px;
-    margin-left: 60px;
-    display: block;
-    font-weight: bolder;
-  }
-  .sloganMobile {
-    display: none;
-  }
-  /* Solo para Nosotros: */
-  .grillaNosotros {
-    width: 100%;
-    height: 100vh;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 100vw;
-        grid-template-columns: 100vw;
-    -ms-grid-rows: 25% auto 10% 10%;
-        grid-template-rows: 25% auto 10% 10%;
-        grid-template-areas: "header" "mainNosotros" "botonUp" "footer";
-    gap: 0px;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
-    justify-items: stretch;
-  }
   /* Solo para Servicios: */
   .grillaServicios {
     width: 100%;
@@ -499,7 +390,41 @@ form {
   .contratacionBotones img {
     height: 220px;
   }
-  /* Solo para Proyectos: */
+}
+
+/*---------------------MOBILE-SMARTPHONE---------------------*/
+.grillaProyectos {
+  width: 100%;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100vw;
+      grid-template-columns: 100vw;
+  -ms-grid-rows: 25% auto auto 10% 10%;
+      grid-template-rows: 25% auto auto 10% 10%;
+      grid-template-areas: "header" "mainProyectos" "galeria" "botonUp" "footer";
+  gap: 0px;
+}
+
+.mainProyectos {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: mainProyectos;
+}
+
+.galeria {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: galeria;
+  width: 90vw;
+}
+
+.mobileNo {
+  display: none;
+}
+
+/*---------------------DESKTOP---------------------*/
+@media (min-width: 1024px) {
   .grillaProyectos {
     width: 100%;
     height: 100vp;
@@ -522,7 +447,45 @@ form {
   .galeria {
     width: 70vw;
   }
-  /* Solo para Contacto: */
+}
+
+/*---------------------MOBILE-SMARTPHONE---------------------*/
+.grillaContacto {
+  width: 100%;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100vw;
+      grid-template-columns: 100vw;
+  -ms-grid-rows: 25% auto 10%;
+      grid-template-rows: 25% auto 10%;
+      grid-template-areas: "header" "mainContacto" "footer";
+  gap: 0px;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  justify-items: stretch;
+}
+
+.mainContacto {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: mainContacto;
+}
+
+.imgContacto {
+  display: none;
+}
+
+form {
+  font-family: 'Mulish', sans-serif;
+  color: black;
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+/*---------------------DESKTOP---------------------*/
+@media (min-width: 1024px) {
   .grillaContacto {
     width: 100%;
     height: 100vh;
@@ -545,5 +508,60 @@ form {
     width: 400px;
     height: auto;
   }
+}
+
+.botonUp {
+  padding: 30px;
+  text-align: center;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: botonUp;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.textoUp {
+  color: black;
+  font-family: "Mulish", sans-serif;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.textoUp:hover {
+  background-color: black;
+  color: white;
+}
+
+footer {
+  background-color: #e2d7c7;
+  font-family: "Mulish", sans-serif;
+  color: black;
+  font-weight: bolder;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0px;
+}
+
+footer .contacto {
+  text-align: center;
+  padding: 0px;
 }
 /*# sourceMappingURL=style.css.map */

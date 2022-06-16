@@ -1,0 +1,62 @@
+/*---------------------MOBILE-SMARTPHONE---------------------*/
+
+.grillaContacto{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 25% auto 10%;
+    grid-template-areas: 
+    "header"
+    "mainContacto"
+    "footer"
+    ;
+    gap: 0px;
+    align-items: stretch;
+    justify-items: stretch;
+}
+
+.mainContacto{
+    grid-area: mainContacto;
+}
+    
+.imgContacto{
+    display: none;
+}
+
+form{
+    font-family: 'Mulish', sans-serif;
+    color: black;
+    font-weight: bolder; 
+    font-size: 15px;
+}
+
+
+/*---------------------DESKTOP---------------------*/
+
+@media (min-width: 1024px){
+
+.grillaContacto{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% auto 10vh;
+    grid-template-areas: 
+    "header"
+    "mainContacto" 
+    "footer"
+    ;
+    gap: 0px;
+    align-items: stretch;
+    justify-items: stretch;
+}
+
+.imgContacto{
+    display: block;
+    padding-bottom: 20px;
+    width: 400px;
+    height: auto;
+}
+
+}

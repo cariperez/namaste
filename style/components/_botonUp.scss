@@ -1,0 +1,20 @@
+.botonUp{
+    padding: 30px;
+    text-align: center;
+    grid-area: botonUp;
+    align-self: center;
+}
+
+.textoUp{
+    color: black;
+    font-family: $fuente-principal;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-decoration: none;
+        &:hover{
+            background-color: black;
+            color: white;
+    }
+}

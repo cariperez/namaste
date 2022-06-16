@@ -1,0 +1,61 @@
+/*---------------------MOBILE-SMARTPHONE---------------------*/
+
+.grillaProyectos{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 25% auto auto 10% 10%;
+    grid-template-areas: 
+    "header"
+    "mainProyectos"
+    "galeria"
+    "botonUp"
+    "footer"
+    ;
+    gap: 0px;
+}
+
+.mainProyectos{
+    grid-area: mainProyectos;
+}
+
+.galeria{
+    grid-area: galeria;
+    width: 90vw;
+}
+
+.mobileNo{
+    display: none;
+}
+
+/*---------------------DESKTOP---------------------*/
+
+@media (min-width: 1024px){
+
+    .grillaProyectos{
+        width: 100%;
+        height: 100vp;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% auto auto 10% 10%;
+        grid-template-areas: 
+        "header"
+        "mainProyectos"
+        "galeria"
+        "botonUp" 
+        "footer"
+        ;
+        gap: 0px;
+        align-items: stretch;
+        justify-items: stretch;
+    }
+    
+    .mobileNo{
+        display: block;
+    }
+    
+    .galeria{
+        width: 70vw;
+    }
+}
