@@ -5,7 +5,7 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 25% auto auto 10% 10%;
+    grid-template-rows: 25% auto auto 10% 50%;
     grid-template-areas: 
     "header"
     "contratacion"
@@ -60,7 +60,7 @@
         height: 100vh;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 25% auto auto 10% 10%;
+        grid-template-rows: 25% auto auto 10% 40%;
         grid-template-areas: 
         "header"
         "contratacion" 

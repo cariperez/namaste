@@ -1,0 +1,14 @@
+$redes:(
+    fb    30px  rgb(68, 62, 187),
+    ig    30px  rgb(214, 154, 51),
+    tt    30px  rgb(0, 0, 0),
+    wa    30px  rgb(44, 172, 63),
+);
+
+@each $red, $fontsize, $color in $redes{
+    .icono-#{$red}{
+        font-size: $fontsize;
+        color: $color;
+    }
+} 
+

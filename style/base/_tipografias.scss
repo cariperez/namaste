@@ -4,17 +4,47 @@
 
 .texto{
     font-family: $fuente-principal;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
     font-size: 15px;
     font-weight: bold;
+    text-decoration: none;
 }
 
-.textos{
-    font-family: $fuente-principal;
+.texto-nav{
+    @texto;
+    color: rgb(255, 255, 255);
+}
+
+.texto-general{
+    @texto
     color: black;
+}
+
+.texto-qvmp{
+    @texto;
+    font-size: medium;
+    text-align: center;
+    color: dimgrey;
     font-weight: bolder;
-    padding-bottom: 30px;
+    padding-top: 30px
+}
+
+.texto-footer{
+    @texto;
+    color: black;
+    padding: 0px;  
+    margin: 0px;  
+    font-size: 15px;
+    text-align: left;
+}
+
+.texto-footer-dest{
+    @texto;
+    color: dimgray;
+    font-weight: bolder;
+    font-size: 18px;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 h3{

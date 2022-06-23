@@ -1,4 +1,6 @@
-footer{
+// ---------------------MOBILE-SMARTPHONE---------------------
+
+.footer{
     background-color: $fondo-header-footer;
     font-family: $fuente-principal;
     color: black;
@@ -9,8 +11,75 @@ footer{
     justify-content: center;
     align-items: center;
     margin-bottom: 0px;
-        .contacto{
-        text-align: center;
-        padding: 0px; 
-    }
+    height: auto;
+
+        .links-footer{
+            text-align: center;
+            padding: 0px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contacto-footer{
+            text-align: center;
+            padding: 0px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .redes-footer{
+            padding: 60px 0px; 
+            height: 80px;
+            width: 80vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
 }
+
+// ---------------------DESKTOP---------------------
+
+@media (min-width: 1024px){
+
+    .footer{    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0px;
+        height: auto;
+    
+        .links-footer{
+            width: 33%;
+            padding-left: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+        }
+
+        .contacto-footer{
+            width: 33%;
+            padding: 0px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+        }
+
+        .redes-footer{
+            width: 33%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: end;
+            padding-right: 50px;
+        }
+    }
+}    

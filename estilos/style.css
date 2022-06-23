@@ -11,17 +11,46 @@ html {
 
 .texto {
   font-family: "Mulish", sans-serif;
-  color: white;
-  text-decoration: none;
   font-size: 15px;
   font-weight: bold;
+  text-decoration: none;
 }
 
-.textos {
-  font-family: "Mulish", sans-serif;
-  color: black;
+.texto-nav {
+  @texto;
+  color: white;
+}
+
+.texto-general {
+  @texto color: black;
+}
+
+.texto-qvmp {
+  @texto;
+  font-size: medium;
+  text-align: center;
+  color: dimgrey;
   font-weight: bolder;
-  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.texto-footer {
+  @texto;
+  color: black;
+  padding: 0px;
+  margin: 0px;
+  font-size: 15px;
+  text-align: left;
+}
+
+.texto-footer-dest {
+  @texto;
+  color: dimgray;
+  font-weight: bolder;
+  font-size: 18px;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 h3 {
@@ -139,19 +168,15 @@ p {
   display: grid;
   -ms-grid-columns: 100vw;
       grid-template-columns: 100vw;
-  -ms-grid-rows: 18% 8% auto 12% 10%;
-      grid-template-rows: 18% 8% auto 12% 10%;
-      grid-template-areas: "header"
- "menu" 
- "mainIndex"
- "slogan"
- "footer";
+  -ms-grid-rows: 18% 8% auto 12% auto auto auto;
+      grid-template-rows: 18% 8% auto 12% auto auto auto;
+      grid-template-areas: "header" "menu"  "mainIndex" "slogan" "section-galeria" "masFotos" "footer";
   gap: 0px;
 }
 
 .mainIndex {
   width: 100%;
-  height: auto;
+  height: 100vh;
   background-image: url(../imagenes/FAL-D4_reduc-copia.png);
   background-position: left left;
   background-repeat: no-repeat;
@@ -196,6 +221,68 @@ p {
       align-self: center;
 }
 
+.section-galeria {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: section-galeria;
+  width: 100vw;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.galeria-index {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.botones-fotos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.masFotos {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: masFotos;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 80vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
+}
+
 /*---------------------DESKTOP---------------------*/
 @media (min-width: 1024px) {
   .grillaIndex {
@@ -205,11 +292,9 @@ p {
     display: grid;
     -ms-grid-columns: 100vw;
         grid-template-columns: 100vw;
-    -ms-grid-rows: 25% auto 10%;
-        grid-template-rows: 25% auto 10%;
-        grid-template-areas: "header"
- "mainIndex"
- "footer";
+    -ms-grid-rows: 25% auto auto auto 40%;
+        grid-template-rows: 25% auto auto auto 40%;
+        grid-template-areas: "header" "mainIndex" "section-galeria" "masFotos" "footer";
     gap: 0px;
   }
   .mainIndex {
@@ -235,6 +320,57 @@ p {
   .sloganMobile {
     display: none;
   }
+  .galeria-index {
+    width: 50vw;
+  }
+  .botones-fotos {
+    width: 80 vw;
+    -ms-flex-item-align: center;
+        align-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 20px;
+  }
+}
+
+.btns {
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 200px;
+  border: 3px solid;
+  padding: 5px 20px;
+}
+
+.btn-resid {
+  @btns;
+  color: white;
+  background-color: black;
+  border-color: dimgray;
+}
+
+.btn-comer {
+  @btns;
+  color: black;
+  background-color: dimgray;
+  border-color: white;
+}
+
+.btn-ofic {
+  @btns;
+  color: dimgray;
+  background-color: white;
+  border-color: dimgray;
+}
+
+a {
+  text-decoration: none;
 }
 
 /*---------------------MOBILE-SMARTPHONE---------------------*/
@@ -245,12 +381,9 @@ p {
   display: grid;
   -ms-grid-columns: 100vw;
       grid-template-columns: 100vw;
-  -ms-grid-rows: 25% auto 10% 10%;
-      grid-template-rows: 25% auto 10% 10%;
-      grid-template-areas: "header"
- "mainNosotros"
- "botonUp"
- "footer";
+  -ms-grid-rows: 25% auto 10% 50%;
+      grid-template-rows: 25% auto 10% 50%;
+      grid-template-areas: "header" "mainNosotros" "botonUp" "footer";
   gap: 0px;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
@@ -273,12 +406,9 @@ p {
     display: grid;
     -ms-grid-columns: 100vw;
         grid-template-columns: 100vw;
-    -ms-grid-rows: 25% auto 10% 10%;
-        grid-template-rows: 25% auto 10% 10%;
-        grid-template-areas: "header"
- "mainNosotros"
- "botonUp"
- "footer";
+    -ms-grid-rows: 25% auto 10% 40%;
+        grid-template-rows: 25% auto 10% 40%;
+        grid-template-areas: "header" "mainNosotros" "botonUp" "footer";
     gap: 0px;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
@@ -295,13 +425,9 @@ p {
   display: grid;
   -ms-grid-columns: 100vw;
       grid-template-columns: 100vw;
-  -ms-grid-rows: 25% auto auto 10% 10%;
-      grid-template-rows: 25% auto auto 10% 10%;
-      grid-template-areas: "header"
- "contratacion"
- "contratacionTexto"
- "botonUp"
- "footer";
+  -ms-grid-rows: 25% auto auto 10% 50%;
+      grid-template-rows: 25% auto auto 10% 50%;
+      grid-template-areas: "header" "contratacion" "contratacionTexto" "botonUp" "footer";
   gap: 0px;
 }
 
@@ -375,13 +501,9 @@ p {
     display: grid;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 25% auto auto 10% 10%;
-        grid-template-rows: 25% auto auto 10% 10%;
-        grid-template-areas: "header"
- "contratacion" 
- "contratacionTexto"
- "botonUp"
- "footer";
+    -ms-grid-rows: 25% auto auto 10% 40%;
+        grid-template-rows: 25% auto auto 10% 40%;
+        grid-template-areas: "header" "contratacion"  "contratacionTexto" "botonUp" "footer";
     gap: 0px;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
@@ -417,13 +539,9 @@ p {
   display: grid;
   -ms-grid-columns: 100vw;
       grid-template-columns: 100vw;
-  -ms-grid-rows: 25% auto auto 10% 10%;
-      grid-template-rows: 25% auto auto 10% 10%;
-      grid-template-areas: "header"
- "mainProyectos"
- "galeria"
- "botonUp"
- "footer";
+  -ms-grid-rows: 25% auto auto 10% 50%;
+      grid-template-rows: 25% auto auto 10% 50%;
+      grid-template-areas: "header" "mainProyectos" "galeria" "botonUp" "footer";
   gap: 0px;
 }
 
@@ -453,13 +571,9 @@ p {
     display: grid;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 25% auto auto 10% 10%;
-        grid-template-rows: 25% auto auto 10% 10%;
-        grid-template-areas: "header"
- "mainProyectos"
- "galeria"
- "botonUp" 
- "footer";
+    -ms-grid-rows: 25% auto auto 10% 40%;
+        grid-template-rows: 25% auto auto 10% 40%;
+        grid-template-areas: "header" "mainProyectos" "galeria" "botonUp"  "footer";
     gap: 0px;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
@@ -482,11 +596,9 @@ p {
   display: grid;
   -ms-grid-columns: 100vw;
       grid-template-columns: 100vw;
-  -ms-grid-rows: 25% auto 10%;
-      grid-template-rows: 25% auto 10%;
-      grid-template-areas: "header"
- "mainContacto"
- "footer";
+  -ms-grid-rows: 25% auto 50%;
+      grid-template-rows: 25% auto 50%;
+      grid-template-areas: "header" "mainContacto" "footer";
   gap: 0px;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
@@ -520,11 +632,9 @@ form {
     display: grid;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 25% auto 10vh;
-        grid-template-rows: 25% auto 10vh;
-        grid-template-areas: "header"
- "mainContacto" 
- "footer";
+    -ms-grid-rows: 25% auto 40vh;
+        grid-template-rows: 25% auto 40vh;
+        grid-template-areas: "header" "mainContacto"  "footer";
     gap: 0px;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
@@ -565,7 +675,7 @@ form {
   color: white;
 }
 
-footer {
+.footer {
   background-color: #e2d7c7;
   font-family: "Mulish", sans-serif;
   color: black;
@@ -587,10 +697,152 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 0px;
+  height: auto;
 }
 
-footer .contacto {
+.footer .links-footer {
   text-align: center;
   padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .contacto-footer {
+  text-align: center;
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .redes-footer {
+  padding: 60px 0px;
+  height: 80px;
+  width: 80vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 0px;
+    height: auto;
+  }
+  .footer .links-footer {
+    width: 33%;
+    padding-left: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .footer .contacto-footer {
+    width: 33%;
+    padding: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .footer .redes-footer {
+    width: 33%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    padding-right: 50px;
+  }
+}
+
+.icono-fb {
+  font-size: 30px;
+  color: #443ebb;
+}
+
+.icono-ig {
+  font-size: 30px;
+  color: #d69a33;
+}
+
+.icono-tt {
+  font-size: 30px;
+  color: black;
+}
+
+.icono-wa {
+  font-size: 30px;
+  color: #2cac3f;
 }
 /*# sourceMappingURL=style.css.map */

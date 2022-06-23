@@ -5,12 +5,14 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 18% 8% auto 12% 10%;
+    grid-template-rows: 18% 8% auto 12% auto auto auto;
     grid-template-areas: 
     "header"
     "menu" 
     "mainIndex"
     "slogan"
+    "section-galeria"
+    "masFotos"
     "footer"
     ;
     gap: 0px;
@@ -18,7 +20,7 @@
 
 .mainIndex{  
     width: 100%;
-    height: auto;
+    height: 100vh;
     background-image: url(../imagenes/FAL-D4_reduc-copia.png);
     background-position: left left;
     background-repeat: no-repeat;
@@ -50,6 +52,39 @@
     align-self: center;
 }
 
+.section-galeria{
+    grid-area: section-galeria;
+    width: 100vw;
+    padding-top: 60px; 
+    padding-bottom: 60px; 
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria-index{
+    justify-self: center;
+}
+
+.botones-fotos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.masFotos{
+    grid-area: masFotos;
+    justify-self: center;
+    align-self: center;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
 /*---------------------DESKTOP---------------------*/
 
 @media (min-width: 1024px){
@@ -59,10 +94,12 @@
         height: 100vh;
         display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: 25% auto 10%;
+        grid-template-rows: 25% auto auto auto 40%;
         grid-template-areas: 
         "header"
         "mainIndex"
+        "section-galeria"
+        "masFotos"
         "footer"
         ;
         gap: 0px;
@@ -90,6 +127,19 @@
     
     .sloganMobile{
         display: none
+    }
+
+    .galeria-index{
+        width: 50vw;
+    }
+
+    .botones-fotos{
+        width: 80 vw;
+        align-self: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 20px;
     }
 }
     

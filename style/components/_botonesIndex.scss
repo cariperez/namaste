@@ -1,0 +1,32 @@
+@mixin btn-colores($btn-color, $btn-fondo, $btn-border){
+    color: $btn-color;
+    background-color: $btn-fondo;
+    border-color: $btn-border;
+}
+
+.btns {
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 200px;
+    border: 3px solid;
+    padding: 5px 20px;
+}
+
+.btn-resid{
+    @btns;
+    @include btn-colores(white, black, dimgray);
+}
+
+.btn-comer{
+    @btns;
+    @include btn-colores(black, dimgray, white);
+}
+
+.btn-ofic{
+    @btns;
+    @include btn-colores(dimgray, white, dimgray);
+}
+
+a{
+    text-decoration: none;
+}
