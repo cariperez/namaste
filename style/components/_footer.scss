@@ -1,85 +1,145 @@
 // ---------------------MOBILE-SMARTPHONE---------------------
 
 .footer{
+    width: 100%;
     background-color: $fondo-header-footer;
     font-family: $fuente-principal;
     color: black;
     font-weight: bolder; 
     grid-area: footer;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0px;
-    height: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "links"
+    "contacto"
+    "redes"
+    "newsletter"
+    "copy"             
+    ;
 
         .links-footer{
-            text-align: center;
-            padding: 0px; 
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding-bottom: 10px;
+            grid-area: links;
         }
 
         .contacto-footer{
-            text-align: center;
-            padding: 0px; 
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding-bottom: 30px;
+            grid-area: contacto;
         }
 
         .redes-footer{
-            padding: 60px 0px; 
-            height: 80px;
-            width: 80vw;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
+            padding: 20px;
+            grid-area: redes;
+        }
+
+        .newsletter{
+            grid-area: newsletter;
+            border: 2px black dotted;
+            border-radius: 10px;
+            padding: 10px;
+            width: 80vw;
+            justify-self: center;
+            justify-items: center;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .copy{
+            grid-area: copy;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            background-color: black;
+            width: 100%;
+            padding-bottom: 0px;
+            p{
+                color: white;
+                font-size: 15px;
+            }
         }
 }
+
+// ---------------------MOBILE: TABLET---------------------
+
+@media (min-width: 768px){
+
+    .footer{   
+        width: 100%; 
+        display: grid;
+        grid-template-columns: 25vw 25vw auto;
+        grid-template-rows: auto;
+        height: fit-content;
+        grid-template-areas: 
+        "links contacto newsletter"
+        "redes redes newsletter"
+        "copy  copy copy"             
+        ;
+    
+        .links-footer{
+            margin-top: 20px;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-bottom: 0px;
+            padding-left: 50px;
+        }
+
+        .contacto-footer{
+            margin-top: 20px;
+            justify-content: flex-start;
+            align-items: flex-start;
+            grid-area: contacto;
+            margin-bottom: 0px;
+        }
+
+        .redes-footer{
+            justify-items: stretch;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0px;
+            padding: 0px 50px;
+        }
+
+        .newsletter{
+            margin-top: 20px;
+            grid-area: newsletter;
+            padding: 20px;
+            width: auto;
+        }
+
+        .copy{
+            grid-area: copy;
+            display: flex;
+            justify-content: center;
+            justify-self: center;
+            padding: 10px 0px;
+        }
+    }
+}    
 
 // ---------------------DESKTOP---------------------
 
 @media (min-width: 1024px){
 
     .footer{    
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 0px;
-        height: auto;
-    
         .links-footer{
-            width: 33%;
-            padding-left: 50px;
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
-            align-items: start;
-        }
-
-        .contacto-footer{
-            width: 33%;
-            padding: 0px; 
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
-            align-items: start;
+            padding-left: 150px;
         }
 
         .redes-footer{
-            width: 33%;
-            height: auto;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: end;
-            padding-right: 50px;
+            padding: 0px 150px;
         }
     }
 }    

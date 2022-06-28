@@ -60,9 +60,9 @@ p{
     text-align: justify;
 }
 
-/*---------------------DESKTOP---------------------*/
+/*---------------------TABLET & DESKTOP---------------------*/
 
-@media (min-width: 1024px){
+@media (min-width: 768px){
 
     .textos{
         font-family: $fuente-principal;

@@ -1,10 +1,9 @@
 /*---------------------MOBILE-SMARTPHONE---------------------*/
 
 .grillaNosotros{
-    width: 100%;
     height: 100vh;
     display: grid;
-    grid-template-columns: 100vw;
+    grid-template-columns: 1fr;
     grid-template-rows: 25% auto 10% 50%;
     grid-template-areas: 
     "header"
@@ -13,23 +12,20 @@
     "footer"
     ;
     gap: 0px;
-    align-items: stretch;
-    justify-items: stretch;
 }
 
 .mainNosotros{
     grid-area: mainNosotros;
 }
 
-/*---------------------DESKTOP---------------------*/
+/*---------------------MOBILE-TABLET---------------------*/
 
-@media (min-width: 1024px){
+@media (min-width: 768px){
     
     .grillaNosotros{
-        width: 100%;
         height: 100vh;
         display: grid;
-        grid-template-columns: 100vw;
+        grid-template-columns: 1fr;
         grid-template-rows: 25% auto 10% 40%;
         grid-template-areas: 
         "header"

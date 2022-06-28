@@ -9,6 +9,9 @@ $redes:(
     .icono-#{$red}{
         font-size: $fontsize;
         color: $color;
+        &:hover{
+            color: white;
+        }
     }
 } 
 

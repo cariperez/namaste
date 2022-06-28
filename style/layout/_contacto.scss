@@ -5,7 +5,7 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 25% auto 50%;
+    grid-template-rows: 25% auto auto;
     grid-template-areas: 
     "header"
     "mainContacto"
