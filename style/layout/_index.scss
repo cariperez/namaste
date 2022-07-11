@@ -11,6 +11,7 @@
     "slogan"
     "section-galeria"
     "masFotos"
+    "botonUp"
     "footer"
     ;
     gap: 0px;
@@ -25,6 +26,28 @@
     background-attachment: fixed;
     grid-area: mainIndex;
     margin-top: 0px;
+}
+
+.namaste{
+    height: fit-content;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        h1{
+        font-family: 'Monda', sans-serif;
+        color: black;
+        font-size: 50px;
+        padding-top: 100px;
+    }
+        h2{
+        font-family: $fuente-principal;
+        color: black;
+        font-size: 20px;
+        font-weight: lighter;
+        text-align: center;
+    }
 }
 
 .sloganPC{
@@ -53,7 +76,7 @@
     width: 1fr;
     padding-top: 60px; 
     padding-bottom: 60px; 
-    background-color: black;
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,41 +96,29 @@
 
 .masFotos{
     grid-area: masFotos;
+    background-color: black;
+    border-radius: 10px;
     justify-self: center;
     align-self: center;
     width: 80vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 30px;
+    margin-top: 50px;
+    padding: 20px 0px;
 }
 
 /*---------------------MOBILE-TABLET---------------------*/
 
 @media (min-width: 768px){
      
-    .grillaIndex{
-        height: 100vh;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "header"
-        "mainIndex"
-        "section-galeria"
-        "masFotos"
-        "footer"
-        ;
-        gap: 0px;
-    }
-
-    .mainIndex{  
-        background-image: url(../imagenes/FAL-D4_reduc-copia.png);
-        background-position: top center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        grid-area: mainIndex;
+    .namaste{
+            h1{
+            font-size: 70px;
+        }
+            h2{
+            font-size: 20px;
+        }
     }
     
     .sloganPC{
@@ -125,17 +136,34 @@
         display: none
     }
 
+    .galeria-index{
+        width: 70vw;
+    }
+
+    .masFotos{
+        width: 70vw;
+    }
+
+}
+
+/*---------------------MOBILE-TABLET/DESKTOP---------------------*/
+
+@media (min-width: 1024px){
+
+    .galeria-index{
+        width: 50vw;
+    }
+
+    .masFotos{
+        width: 50vw;
+    }
+     
     .botones-fotos{
-        width: 80 vw;
+        width: 40vw;
         align-self: center;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        gap: 20px;
-    }
-
-    .galeria-index{
-        justify-self: center;
-        width: 60vw;
+        gap: 10px;
     }
 }

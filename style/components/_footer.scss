@@ -5,7 +5,9 @@
     background-color: $fondo-header-footer;
     font-family: $fuente-principal;
     color: black;
-    font-weight: bolder; 
+    font-weight: bolder;
+    margin-top: 50px;
+    margin-bottom: 0px; 
     grid-area: footer;
     display: grid;
     grid-template-columns: 100%;
@@ -25,6 +27,10 @@
             align-items: center;
             padding-bottom: 10px;
             grid-area: links;
+
+            a:hover{
+                color: white;
+            }
         }
 
         .contacto-footer{
@@ -68,6 +74,7 @@
             p{
                 color: white;
                 font-size: 15px;
+                text-align: center;
             }
         }
 }
@@ -79,7 +86,7 @@
     .footer{   
         width: 100%; 
         display: grid;
-        grid-template-columns: 25vw 25vw auto;
+        grid-template-columns: 30vw 30vw auto;
         grid-template-rows: auto;
         height: fit-content;
         grid-template-areas: 
@@ -105,11 +112,11 @@
         }
 
         .redes-footer{
-            justify-items: stretch;
             justify-content: space-between;
             align-items: flex-start;
             margin-bottom: 0px;
-            padding: 0px 50px;
+            padding-left: 50px;
+            max-width: 30vw;
         }
 
         .newsletter{
@@ -135,11 +142,11 @@
 
     .footer{    
         .links-footer{
-            padding-left: 150px;
+            padding-left: 120px;
         }
 
         .redes-footer{
-            padding: 0px 150px;
+            padding-left:120px;
         }
     }
 }    

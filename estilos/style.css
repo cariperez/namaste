@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Monda&family=Mulish:wght@200&family=Square+Peg&family=Zen+Loop&display=swap");
 * {
   padding: 0px;
@@ -47,19 +48,19 @@ html {
 
 .texto-footer-dest {
   @texto;
-  color: dimgray;
+  color: black;
   font-weight: bolder;
-  font-size: 18px;
+  font-size: 20px;
   text-align: left;
   padding-top: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
-h3 {
+.titulo {
   font-size: 25px;
-  padding-top: 40px;
   text-align: left;
   font-weight: bold;
+  padding-top: 100px;
 }
 
 p {
@@ -75,9 +76,9 @@ p {
     color: black;
     padding-bottom: 30px;
   }
-  h3 {
+  .titulo {
     font-size: 25px;
-    padding-top: 50px;
+    padding-top: 120px;
     text-align: left;
   }
   p {
@@ -102,7 +103,40 @@ p {
   -webkit-box-pack: stretch;
       -ms-flex-pack: stretch;
           justify-content: stretch;
-  background-color: #e2d7c7;
+  background-color: #aba091;
+  position: fixed;
+  width: 100vw;
+}
+
+.brand {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+/*---------------------MOBILE-SMARTPHONE---------------------*/
+.grillaIndex {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "header" "mainIndex" "slogan" "section-galeria" "masFotos" "botonUp" "footer";
+  gap: 0px;
+}
+
+.mainIndex {
+  height: 100vh;
+  background-image: url(../imagenes/FAL-D4_reduc-copia.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: mainIndex;
+  margin-top: 0px;
 }
 
 .namaste {
@@ -129,6 +163,7 @@ p {
   font-family: 'Monda', sans-serif;
   color: black;
   font-size: 50px;
+  padding-top: 100px;
 }
 
 .namaste h2 {
@@ -137,88 +172,6 @@ p {
   font-size: 20px;
   font-weight: lighter;
   text-align: center;
-}
-
-@media (min-width: 768px) {
-  .namaste {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    gap: 10px;
-  }
-  .namaste h1 {
-    font-size: 50px;
-    padding-right: 80px;
-    line-height: 30px;
-  }
-  .namaste h2 {
-    font-size: 20px;
-    padding-right: 80px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .namaste {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    gap: 10px;
-  }
-  .namaste h1 {
-    font-size: 50px;
-    padding-right: 80px;
-    line-height: 30px;
-  }
-  .namaste h2 {
-    font-size: 25px;
-    padding-right: 80px;
-  }
-}
-
-/*---------------------MOBILE-SMARTPHONE---------------------*/
-.grillaIndex {
-  height: 100vh;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-      grid-template-areas: "header" "mainIndex" "slogan" "section-galeria" "masFotos" "footer";
-  gap: 0px;
-}
-
-.mainIndex {
-  height: 100vh;
-  background-image: url(../imagenes/FAL-D4_reduc-copia.png);
-  background-position: top left;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: mainIndex;
-  margin-top: 0px;
 }
 
 .sloganPC {
@@ -258,7 +211,7 @@ p {
   width: 1fr;
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: black;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -297,6 +250,8 @@ p {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: masFotos;
+  background-color: black;
+  border-radius: 10px;
   justify-self: center;
   -ms-flex-item-align: center;
       align-self: center;
@@ -311,31 +266,17 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 30px;
+  margin-top: 50px;
+  padding: 20px 0px;
 }
 
 /*---------------------MOBILE-TABLET---------------------*/
 @media (min-width: 768px) {
-  .grillaIndex {
-    height: 100vh;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
-        grid-template-areas: "header" "mainIndex" "section-galeria" "masFotos" "footer";
-    gap: 0px;
+  .namaste h1 {
+    font-size: 70px;
   }
-  .mainIndex {
-    background-image: url(../imagenes/FAL-D4_reduc-copia.png);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: mainIndex;
+  .namaste h2 {
+    font-size: 20px;
   }
   .sloganPC {
     font-family: 'Square Peg', cursive;
@@ -350,8 +291,24 @@ p {
   .sloganMobile {
     display: none;
   }
+  .galeria-index {
+    width: 70vw;
+  }
+  .masFotos {
+    width: 70vw;
+  }
+}
+
+/*---------------------MOBILE-TABLET/DESKTOP---------------------*/
+@media (min-width: 1024px) {
+  .galeria-index {
+    width: 50vw;
+  }
+  .masFotos {
+    width: 50vw;
+  }
   .botones-fotos {
-    width: 80 vw;
+    width: 40vw;
     -ms-flex-item-align: center;
         align-self: center;
     display: -webkit-box;
@@ -363,12 +320,7 @@ p {
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    gap: 20px;
-  }
-  .galeria-index {
-    -ms-grid-column-align: center;
-        justify-self: center;
-    width: 60vw;
+    gap: 10px;
   }
 }
 
@@ -377,11 +329,11 @@ p {
   margin-bottom: 20px;
   width: 200px;
   border: 3px solid;
-  padding: 5px 20px;
+  padding: 5px;
 }
 
 .btns:hover {
-  background-color: #e2d7c7;
+  background-color: #aba091;
   border: white;
   color: white;
   font-weight: bold;
@@ -419,8 +371,8 @@ a {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 25% auto 10% 50%;
-      grid-template-rows: 25% auto 10% 50%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
       grid-template-areas: "header" "mainNosotros" "botonUp" "footer";
   gap: 0px;
 }
@@ -431,6 +383,22 @@ a {
   grid-area: mainNosotros;
 }
 
+.fotoSobreMi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fotoDiseñadora {
+  width: 80vw;
+}
+
 /*---------------------MOBILE-TABLET---------------------*/
 @media (min-width: 768px) {
   .grillaNosotros {
@@ -439,14 +407,36 @@ a {
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 25% auto 10% 40%;
-        grid-template-rows: 25% auto 10% 40%;
+    -ms-grid-rows: auto auto 10% 40%;
+        grid-template-rows: auto auto 10% 40%;
         grid-template-areas: "header" "mainNosotros" "botonUp" "footer";
     gap: 0px;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
     justify-items: stretch;
+  }
+  .fotoYdescripcion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+  }
+  .fotoDiseñadora {
+    width: 40vw;
+  }
+}
+
+/*---------------------DESKTOP---------------------*/
+@media (min-width: 1024px) {
+  .fotoDiseñadora {
+    width: 50vw;
   }
 }
 
@@ -456,10 +446,10 @@ a {
   height: 100vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 100vw;
-      grid-template-columns: 100vw;
-  -ms-grid-rows: 25% auto auto 10% 50%;
-      grid-template-rows: 25% auto auto 10% 50%;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
       grid-template-areas: "header" "contratacion" "contratacionTexto" "botonUp" "footer";
   gap: 0px;
 }
@@ -498,7 +488,7 @@ a {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  height: 150px;
+  height: 250px;
 }
 
 .escala:hover {
@@ -525,8 +515,8 @@ a {
           justify-content: center;
 }
 
-/*---------------------DESKTOP---------------------*/
-@media (min-width: 1024px) {
+/*---------------------MOBILE-TABLET---------------------*/
+@media (min-width: 768px) {
   .grillaServicios {
     width: 100%;
     height: 100vh;
@@ -534,8 +524,8 @@ a {
     display: grid;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 25% auto auto 10% 40%;
-        grid-template-rows: 25% auto auto 10% 40%;
+    -ms-grid-rows: auto auto auto 10% 40%;
+        grid-template-rows: auto auto auto 10% 40%;
         grid-template-areas: "header" "contratacion"  "contratacionTexto" "botonUp" "footer";
     gap: 0px;
     -webkit-box-align: stretch;
@@ -564,16 +554,21 @@ a {
   }
 }
 
+/*---------------------DESKTOP---------------------*/
+@media (min-width: 1024px) {
+  .contratacionBotones img {
+    height: 250px;
+  }
+}
+
 /*---------------------MOBILE-SMARTPHONE---------------------*/
 .grillaProyectos {
-  width: 100%;
-  height: 100vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 100vw;
       grid-template-columns: 100vw;
-  -ms-grid-rows: 25% auto auto 10% 50%;
-      grid-template-rows: 25% auto auto 10% 50%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
       grid-template-areas: "header" "mainProyectos" "galeria" "botonUp" "footer";
   gap: 0px;
 }
@@ -595,24 +590,8 @@ a {
   display: none;
 }
 
-/*---------------------DESKTOP---------------------*/
-@media (min-width: 1024px) {
-  .grillaProyectos {
-    width: 100%;
-    height: 100vp;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-    -ms-grid-rows: 25% auto auto 10% 40%;
-        grid-template-rows: 25% auto auto 10% 40%;
-        grid-template-areas: "header" "mainProyectos" "galeria" "botonUp"  "footer";
-    gap: 0px;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
-    justify-items: stretch;
-  }
+/*---------------------MOBILE-TABLET/DESKTOP---------------------*/
+@media (min-width: 768px) {
   .mobileNo {
     display: block;
   }
@@ -629,9 +608,9 @@ a {
   display: grid;
   -ms-grid-columns: 100vw;
       grid-template-columns: 100vw;
-  -ms-grid-rows: 25% auto auto;
-      grid-template-rows: 25% auto auto;
-      grid-template-areas: "header" "mainContacto" "footer";
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+      grid-template-areas: "header" "mainContacto" "botonUp" "footer";
   gap: 0px;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
@@ -656,42 +635,67 @@ form {
   font-size: 15px;
 }
 
-/*---------------------DESKTOP---------------------*/
-@media (min-width: 1024px) {
-  .grillaContacto {
-    width: 100%;
-    height: 100vh;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-    -ms-grid-rows: 25% auto 40vh;
-        grid-template-rows: 25% auto 40vh;
-        grid-template-areas: "header" "mainContacto"  "footer";
-    gap: 0px;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
-    justify-items: stretch;
+/*---------------------MOBILE-TABLET/DESKTOP---------------------*/
+@media (min-width: 768px) {
+  .formImg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .imgContacto {
     display: block;
-    padding-bottom: 20px;
     width: 400px;
-    height: auto;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .formImg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 30px;
+  }
+  .imgContacto {
+    display: block;
+    width: 400px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 
 .botonUp {
-  padding: 30px;
   text-align: center;
-  -ms-grid-row: 4;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: botonUp;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin-bottom: 50px 0px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .textoUp {
@@ -711,11 +715,13 @@ form {
 
 .footer {
   width: 100%;
-  background-color: #e2d7c7;
+  background-color: #aba091;
   font-family: "Mulish", sans-serif;
   color: black;
   font-weight: bolder;
-  -ms-grid-row: 3;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: footer;
   display: -ms-grid;
@@ -745,6 +751,10 @@ form {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: links;
+}
+
+.footer .links-footer a:hover {
+  color: white;
 }
 
 .footer .contacto-footer {
@@ -822,6 +832,7 @@ form {
 .footer .copy p {
   color: white;
   font-size: 15px;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -829,8 +840,8 @@ form {
     width: 100%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 25vw 25vw auto;
-        grid-template-columns: 25vw 25vw auto;
+    -ms-grid-columns: 30vw 30vw auto;
+        grid-template-columns: 30vw 30vw auto;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
     height: -webkit-fit-content;
@@ -863,7 +874,6 @@ form {
     margin-bottom: 0px;
   }
   .footer .redes-footer {
-    justify-items: stretch;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -871,7 +881,8 @@ form {
         -ms-flex-align: start;
             align-items: flex-start;
     margin-bottom: 0px;
-    padding: 0px 50px;
+    padding-left: 50px;
+    max-width: 30vw;
   }
   .footer .newsletter {
     margin-top: 20px;
@@ -900,10 +911,10 @@ form {
 
 @media (min-width: 1024px) {
   .footer .links-footer {
-    padding-left: 150px;
+    padding-left: 120px;
   }
   .footer .redes-footer {
-    padding: 0px 150px;
+    padding-left: 120px;
   }
 }
 
@@ -918,7 +929,7 @@ form {
 
 .icono-ig {
   font-size: 30px;
-  color: #d69a33;
+  color: #b250d2;
 }
 
 .icono-ig:hover {

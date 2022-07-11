@@ -14,21 +14,21 @@
 </head>
 <body>
 
+  <span id="arriba"></span>
+
   <div class="grillaProyectos">
       
-    <span id="up"></span>
-           
-    <div class= "header fixed-top w-100">
-      <div class="namaste">
-        <h1 data-aos="fade-right">namasté</h1>
-        <h2 data-aos="fade-right">asesoramiento online en diseño de interiores</h2>
-      </div>
+    <div class= "header">
+
+      <!--  NAV  -->
                         
       <div class="menu">
       
-        <nav class="navbar navbar-expand-md navbar-dark mb-0" style="background-color: #7b7b7b;">
+        <nav class="navbar navbar-expand-md navbar-dark mb-0" style="background-color: #ABA091;">
                           
           <div class="container-fluid">
+
+            <span class="navbar-brand mb-0 ms-3 namaste h1 brand">namasté</span>
                     
             <button 
               class="color navbar-toggler" 
@@ -38,21 +38,21 @@
             </button>
                     
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav d-lg-flex flex-lg-row w-100 justify-content-evenly">
+              <ul class="navbar-nav d-lg-flex flex-lg-row w-100 me-3 justify-content-end">
                       
                 <li class="nav-item">
-                  <a class="texto texto-nav nav-link" href="../index.html">Inicio</a>
+                  <a class="pe-4 texto texto-nav nav-link" href="../index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="texto texto-nav nav-link" href="../secciones/nosotros.html">Nosotros</a>
+                  <a class="pe-4 texto texto-nav nav-link" href="../secciones/nosotros.html">Sobre mí</a>
                 </li>
                 <li class="nav-item">
-                  <a class="texto texto-nav nav-link" href="../secciones/servicios.html">Servicios</a>
+                  <a class="pe-4 texto texto-nav nav-link" href="../secciones/servicios.html">Servicios</a>
                 </li> 
             
                 <li class="nav-item dropdown">
-                  <a class="texto texto-nav nav-link dropdown-toggle active" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Proyectos</a>
-                    <ul class="desplegable dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                  <a class="pe-4 texto texto-nav nav-link dropdown-toggle active" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Proyectos</a>
+                    <ul class="desplegable dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown"  style="background-color: #7e756a;">
                       <li><a class="texto texto-nav item dropdown-item" href="../secciones/proyectos-resid.html">Residenciales</a></li>
                       <li><a class="texto texto-nav item dropdown-item" href="../secciones/proyectos-comer.html">Comerciales</a></li>
                       <li><a class="texto texto-nav item dropdown-item" href="../secciones/proyectos-ofic.html">Espacios de trabajo</a></li>
@@ -73,12 +73,14 @@
       </div>  
                             
     </div>
+
+    <!--  MAIN-GALERIA  -->
           
     <main class="mainProyectos container">
           
       <section class="texto texto-general container">
                               
-        <h3>Proyectos para espacios comerciales</h3>
+        <h3 class="titulo">Proyectos para espacios comerciales</h3>
           
         <p class="mobileNo">A continuación te mostramos distintos proyectos realizados "a distancia", lo que no significa que durante el proceso no estemos cerca. La comunicación cliente-diseñador es continua a través del/los canales que elijas. Junt@s vamos desarrollando el proyecto a través del intercambio de ideas e imágenes de inspiración, ajustándonos al espacio y al presupuesto del que disponemos.</p>
 
@@ -101,25 +103,25 @@
       
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="../imagenes/comercial/comercial1.jpg" class="d-block" alt="local comercial de diseño">
+            <img src="../imagenes/comercial/comercial1.png" class="d-block w-100" alt="local comercial de diseño">
             <div class="carousel-caption d-none d-md-block">
               <h5>Local Indumentaria (2021)</h5>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="../imagenes/comercial/comercial2.jpg" class="d-block" alt="local comercial moderno">
+            <img src="../imagenes/comercial/comercial2.png" class="d-block w-100" alt="local comercial moderno">
             <div class="carousel-caption d-none d-md-block">
               <h5>Local Indumentaria (2019)</h5>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="../imagenes/comercial/comercial3.jpg" class="d-block" alt="espacio gastronómico de diseño">
+            <img src="../imagenes/comercial/comercial3.png" class="d-block w-100" alt="espacio gastronómico de diseño">
             <div class="carousel-caption d-none d-md-block">
               <h5>Bar en Palermo (2018)</h5>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="../imagenes/comercial/comercial4.jpg" class="d-block" alt="emprendimiento comercial">
+            <img src="../imagenes/comercial/comercial4.png" class="d-block w-100" alt="emprendimiento comercial">
             <div class="carousel-caption d-none   d-md-block">
               <h5>Local Gastronómico (2021)</h5>
             </div>
@@ -138,60 +140,63 @@
       
     </section>
 
+    <!--  BOTON  -->
+
     <div class="botonUp">
-      <a href="#up" class="textoUp">Ir arriba</a>
+      <a href="#arriba" class="textoUp">Ir arriba</a>
     </div>        
                 
-<!-- FOOTER  -->
-    
-<footer class="footer">
+    <!--  FOOTER  -->
+        
+    <footer class="footer">
 
-  <div class="links-footer">
-    <p class="texto texto-footer texto-footer-dest">Namasté</p>
-    <a class="texto texto-footer" href="./secciones/nosotros.html">Nosotros</a>
-    <a class="texto texto-footer" href="./secciones/servicios.html">Servicios</a>
-    <a class="texto texto-footer" href="./secciones/contacto.html">Contacto</a>
-  </div>
-
-  <div class="contacto-footer">
-    <p class="texto texto-footer texto-footer-dest">Hablemos!</p>
-    <p class="texto texto-footer">Mail: info@namaste.com.ar</p>
-    <p class="texto texto-footer">Teléfono: 00-1234-5678</p>
-    <p class="texto texto-footer">Buenos Aires, Argentina.</p>
-  </div>
-
-  <div class="newsletter texto texto-footer">
-
-    <form>
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email:</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div id="emailHelp" class="form-text">No compartiremos tus datos con nadie.</div>
+      <div class="links-footer">
+        <p class="texto texto-footer texto-footer-dest">Namasté</p>
+        <a class="texto texto-footer" href="../index.html">Inicio</a>
+        <a class="texto texto-footer" href="../secciones/nosotros.html">Sobre Mí</a>
+        <a class="texto texto-footer" href="../secciones/servicios.html">Servicios</a>
+        <a class="texto texto-footer" href="../secciones/contacto.html">Contacto</a>
       </div>
-    </form>
 
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
-        Quiero recibir novedades!
-      </label>
-    </div>
+      <div class="contacto-footer">
+        <p class="texto texto-footer texto-footer-dest">Hablemos!</p>
+        <p class="texto texto-footer">Mail: info@namaste.com.ar</p>
+        <p class="texto texto-footer">Teléfono: 00-1234-5678</p>
+        <p class="texto texto-footer">Buenos Aires, Argentina.</p>
+      </div>
 
-    <button type="submit" class="btn btn-dark mt-3">Enviar</button>
+      <div class="newsletter texto texto-footer">
 
-  </div>
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">No compartiremos tus datos con nadie.</div>
+          </div>
+        </form>
 
-  <div class="redes-footer">
-    <div><i class="fa-brands fa-facebook icono-fb"></i></div>
-    <div><i class="fa-brands fa-instagram icono-ig"></i></div>
-    <div><i class="fa-brands fa-tiktok icono-tt"></i></div>
-    <div><i class="fa-brands fa-whatsapp icono-wa"></i></div>
-  </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Quiero recibir novedades!
+          </label>
+        </div>
 
-  <div class="copy">
-    <p class="texto texto-footer">Copiright 2022 namasté. Todos los derechos reservados.</p>
-  </div>
-</footer>
+        <button type="submit" class="btn btn-dark mt-3">Enviar</button>
+
+      </div>
+
+      <div class="redes-footer">
+        <div><i class="fa-brands fa-facebook icono-fb"></i></div>
+        <div><i class="fa-brands fa-instagram icono-ig"></i></div>
+        <div><i class="fa-brands fa-tiktok icono-tt"></i></div>
+        <div><i class="fa-brands fa-whatsapp icono-wa"></i></div>
+      </div>
+
+      <div class="copy">
+        <p class="texto texto-footer">Copiright 2022 namasté. Todos los derechos reservados.</p>
+      </div>
+    </footer>
     
   </div>  
  

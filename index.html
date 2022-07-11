@@ -15,19 +15,21 @@
 
 <body>
 
+  <span id="arriba"></span>
+
   <div class="grillaIndex">
 
+    <!-- NAV  -->
+
     <div class= "header">
-      <div class="namaste">
-        <h1 *data-aos="fade-right">namasté</h1>
-        <h2 data-aos="fade-right">asesoramiento online en diseño de interiores</h2>
-      </div>
         
       <div class="menu">
 
-        <nav class="navbar navbar-expand-md navbar-dark mb-0 w-100" style="background-color: #7b7b7b;">
+        <nav class="navbar navbar-expand-md navbar-dark mb-0 w-100 py-0" style="background-color: #ABA091;">
               
           <div class="container-fluid">
+
+            <span class="navbar-brand mb-0 ms-3 namaste h1 brand">namasté</span>
         
             <button 
             class="color navbar-toggler" 
@@ -37,21 +39,21 @@
             </button>
         
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav d-lg-flex flex-lg-row w-100 justify-content-evenly">
+              <ul class="navbar-nav d-lg-flex flex-lg-row w-100 me-3 justify-content-end">
           
                 <li class="nav-item">
-                  <a class="texto texto-nav nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                  <a class="pe-4 texto texto-nav nav-link active" aria-current="page" href="./index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="texto texto-nav nav-link" href="./secciones/nosotros.html">Nosotros</a>
+                  <a class="pe-4 texto texto-nav nav-link" href="./secciones/nosotros.html">Sobre mí</a>
                 </li>
                 <li class="nav-item">
-                  <a class="texto texto-nav nav-link" href="./secciones/servicios.html">Servicios</a>
+                  <a class="pe-4 texto texto-nav nav-link" href="./secciones/servicios.html">Servicios</a>
                 </li> 
 
                 <li class="nav-item dropdown">
-                  <a class="texto texto-nav nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Proyectos</a>
-                  <ul class="desplegable dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                  <a class="pe-4 texto texto-nav nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Proyectos</a>
+                  <ul class="desplegable dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown"  style="background-color: #7e756a;">
                     <li><a class="texto texto-nav item dropdown-item" href="./secciones/proyectos-resid.html">Residenciales</a></li>
                     <li><a class="texto texto-nav item dropdown-item" href="./secciones/proyectos-comer.html">Comerciales</a></li>
                     <li><a class="texto texto-nav item dropdown-item" href="./secciones/proyectos-ofic.html">Espacios de trabajo</a></li>
@@ -73,7 +75,14 @@
 
     </div>
 
-    <main data-aos="zoom-in" class="mainIndex">
+    <!-- MAIN -->
+
+    <main class="mainIndex">
+
+      <div class="namaste">
+        <h1 data-aos="fade-right">namasté</h1>
+        <h2 data-aos="fade-right">asesoramiento online en diseño de interiores</h2>
+      </div>
 
       <h3 class="sloganPC">Habitá el espacio en el que vivís.</h3>
 
@@ -83,18 +92,20 @@
       <p class="slogan">Habitá el espacio en el que vivís.</p>
     </div>
 
+    <!-- GALERIA -->
+
     <section class="section-galeria">
       <div class="galeria-index">
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="./imagenes/residencial/barra.jpg" class="d-block w-100" alt="Barra, desayunador moderno en casa de barrio cerrado.">
+              <img src="./imagenes/residencial/barra.png" class="d-block w-100" alt="Barra, desayunador moderno en casa de barrio cerrado.">
             </div>
             <div class="carousel-item">
-              <img src="./imagenes/comercial/comercial2.jpg" class="d-block w-100" alt="Local indumentaria masculina, sobrio, elegante, moderno, con equipamiento negro.">
+              <img src="./imagenes/comercial/comercial2.png" class="d-block w-100" alt="Local indumentaria femenina, marroquinería, elegante, moderno, equipamiento y mobiliario blanco.">
             </div>
             <div class="carousel-item">
-              <img src="./imagenes/oficinas/oficinas2.jpeg" class="d-block w-100" alt="Oficina sustentable, minimalista, predomina el blanco con detalles en color y plantas.">
+              <img src="./imagenes/oficinas/oficinas2.png" class="d-block w-100" alt="Oficina sustentable, minimalista, predomina el blanco con detalles en color y plantas.">
             </div>
           </div>
         </div>
@@ -112,6 +123,12 @@
         </div>
       </div>
     </section>
+
+    <!-- BOTON  -->
+
+    <div class="botonUp">
+      <a href="#arriba" class="textoUp">Ir arriba</a>
+    </div>
     
     <!-- FOOTER  -->
     
@@ -119,7 +136,8 @@
 
       <div class="links-footer">
         <p class="texto texto-footer texto-footer-dest">Namasté</p>
-        <a class="texto texto-footer" href="./secciones/nosotros.html">Nosotros</a>
+        <a class="texto texto-footer" href="index.html">Inicio</a>
+        <a class="texto texto-footer" href="./secciones/nosotros.html">Sobre Mí</a>
         <a class="texto texto-footer" href="./secciones/servicios.html">Servicios</a>
         <a class="texto texto-footer" href="./secciones/contacto.html">Contacto</a>
       </div>
